@@ -7,11 +7,11 @@ $clr-warmGrey: #979797;
 $clr-mudBrown: #6d4312;
 
 :root {
-  --dirt-brown: $clr-dirtBrown;
-  --leather: $clr-leather;
-  --dark-tan: $clr-darkTan;
-  --sand: $clr-sand;
-  --black: $clr-black;
-  --warm-grey: $clr-warmGrey;
-  --mud-brown: $clr-mudBrown;
+  --dirt-brown: #{$clr-dirtBrown};
+  --leather: #{$clr-leather};
+  --dark-tan: #{$clr-darkTan};
+  --sand: #{$clr-sand};
+  --black: #{$clr-black};
+  --warm-grey: #{$clr-warmGrey};
+  --mud-brown: #{$clr-mudBrown};
 }
