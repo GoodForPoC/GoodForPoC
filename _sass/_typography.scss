@@ -1,1 +1,57 @@
 // TODO: Figure out link underline trick.
+
+$font-brandonGrotesque: "brandon-grotesque";
+$font-garamondPremierPro: "garamond-premier-pro";
+
+.Card-Company-Title {
+  font-family: $font-garamondPremierPro;
+  font-size: 20px;
+  color: #393939;
+}
+
+.About-Names-Uppercase {
+  font-family: $font-brandonGrotesque;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  color: #181818;
+  color: var(--black);
+}
+
+.Body-Copy {
+  font-family: $font-brandonGrotesque;
+  font-size: 16px;
+  color: #181818;
+  color: var(--black);
+}
+
+.Body-Link {
+  font-family: $font-brandonGrotesque;
+  font-size: 16px;
+  color: #533e2d;
+  color: var(--dirt-brown);
+}
+
+.Card-Excerpt-Body {
+  font-family: $font-brandonGrotesque;
+  font-size: 14px;
+  color: #393939;
+}
+
+.Card-Read-More {
+  font-family: $font-brandonGrotesque;
+  font-size: 13px;
+  color: #533e2d;
+  color: var(--dirt-brown);
+}
+
+.Card-Hiring-Call-Out {
+  font-family: $font-brandonGrotesque;
+  font-size: 12px;
+  color: #ffffff;
+}
+
+.Card-Category-Text {
+  font-family: $font-brandonGrotesque;
+  font-size: 11px;
+  color: #393939;
+}

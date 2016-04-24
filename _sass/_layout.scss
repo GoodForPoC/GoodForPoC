@@ -1,0 +1,23 @@
+.BG {
+  width: 1024px;
+  height: 80px;
+  background-color: rgba(184, 139, 74, 0.2);
+}
+
+.Logo {
+  width: 226px;
+  height: 38px;
+  object-fit: contain;
+  font-family: $font-brandonGrotesque;
+  font-size: 27px;
+  letter-spacing: 2px;
+  color: #533e2d;
+  color: var(--dirt-brown);
+}
+
+.Border {
+  width: 1024px;
+  height: 10px;
+  object-fit: contain;
+  /** FIXME: Add tiling background via SVG. */
+}
