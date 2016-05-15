@@ -2,7 +2,7 @@ body, html {
   padding: 0rem;
   margin: 0rem;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 body {
@@ -19,6 +19,16 @@ header {
 
   &.mini {
     height: 10px;
+  }
+}
+
+body > section[role] {
+  @media (max-width: 800px) {
+    & {
+      > div.wrapper {
+        padding: 0px 10px;
+      }
+    }
   }
 }
 
@@ -45,14 +55,14 @@ section[role=coming-soon] {
   }
 
   > div.wrapper {
-    width: 50%;
+    width: auto;
     height: 100%;
-    padding: 0rem 25%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: rgba(44, 44, 44, 0.4);
+
 
     > h1 {
       @include font-garamond;
@@ -69,10 +79,15 @@ section[role=coming-soon] {
       margin: 0rem;
     }
 
+    > h1, > h2 {
+      text-align: center;
+    }
+
     > p {
       color: #efefef;
       text-align: center;
       font-size: 20px;
+      max-width: 500px;
     }
 
     > form {
@@ -99,6 +114,19 @@ section[role=coming-soon] {
         background-color: #a27035;
         border: none;
         box-shadow: 0 3px 0 0 #6d4312;
+      }
+
+      @media (max-width: 800px) {
+        & {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+
+          input[type=submit] {
+            margin-top: 5px;
+            width: 150px;
+          }
+        }
       }
     }
   }
