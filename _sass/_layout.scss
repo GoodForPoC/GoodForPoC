@@ -1,6 +1,6 @@
 body, html {
-  padding: 0rem;
-  margin: 0rem;
+  padding: 0;
+  margin: 0;
   width: 100vw;
   min-height: 100vh;
 }
@@ -59,7 +59,7 @@ section[role=coming-soon] {
   }
 
   > p {
-    margin: 0rem;
+    margin: 0;
     text-align: center;
 
     > a {
@@ -91,15 +91,16 @@ section[role=coming-soon] {
       color: $clr-white;
       font-size: 45px;
       font-weight: 500;
-      margin: 0rem;
+      margin: 0;
     }
 
     > h2 {
+      margin: 0;
       @include font-brandon;
-      color: $clr-dirtBrown;
-      font-variant: small-caps;
       font-weight: 900;
-      margin: 0rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: $clr-dirtBrown;
     }
 
     > h1, > h2 {
@@ -145,8 +146,8 @@ section[role=coming-soon] {
         box-shadow: 0 3px 0 0 $clr-mudBrown;
         @include font-brandon;
         font-size: 18px;
-        font-weight: 700px;
-        letter-spacing: 0.2px;
+        font-weight: 900px;
+        letter-spacing: 1px;
         color: $clr-white;
 
         &:hover {
