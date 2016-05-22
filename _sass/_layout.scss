@@ -45,10 +45,20 @@ section[role=coming-soon] {
   height: 85vh;
   display: flex;
   flex-direction: column;
+  position: relative;
+
+  &::before {
+    background-color: $clr-clearGrey;
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
 
   > p {
     flex: 1;
-    background-color: $clr-clearGrey;
     margin: 0rem;
     text-align: center;
 
@@ -59,6 +69,7 @@ section[role=coming-soon] {
   }
 
   .photo-credit {
+    position: relative;
     padding: 20px 0;
 
     > a {
@@ -67,14 +78,13 @@ section[role=coming-soon] {
   }
 
   > div.wrapper {
+    position: relative;
     width: auto;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: $clr-clearGrey;
-
 
     > h1 {
       @include font-garamond;
@@ -111,10 +121,11 @@ section[role=coming-soon] {
       }
 
       input[type=email] {
+        -webkit-appearance: none;
+        @include font-brandon;
         background-color: $clr-white;
         border: none;
         color: $clr-clearGrey;
-        @include font-brandon;
 
         &:focus {
           color: $clr-dirtBrown;
@@ -123,15 +134,16 @@ section[role=coming-soon] {
       }
 
       input[type=submit] {
+        -webkit-appearance: none;
         @include font-brandon;
-        letter-spacing: 0.2px;
-        font-size: 18px;
-        color: $clr-white;
-        height: 45px;
-        width: 115px;
         background-color: $clr-leather;
         border: none;
         box-shadow: 0 3px 0 0 $clr-mudBrown;
+        color: $clr-white;
+        font-size: 18px;
+        height: 45px;
+        letter-spacing: 0.2px;
+        width: 115px;
 
         &:hover {
           cursor: pointer;
@@ -170,7 +182,7 @@ section[role=coming-soon] {
 footer {
   @include font-brandon;
   height: 70px;
-  background-color: $clr-clearTan;
+  background-color: $clr-tan;
   color: $clr-dirtBrown;
   text-align: center;
   display: flex;
