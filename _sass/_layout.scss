@@ -8,7 +8,7 @@ body, html {
 body {
   display: flex;
   flex-direction: column;
-  font-family: $font-garamondPremierPro;
+  @include font-garamond;
 }
 
 // We're going to have a full-width page.
@@ -111,6 +111,13 @@ section[role=coming-soon] {
         background-color: #fff;
         border: none;
         color: rgba(44, 44, 44, 0.4);
+        box-shadow: 0 3px 0 0 #ffffff;
+        @include font-brandon;
+        
+        &:focus {
+          box-shadow: 0 3px 0 0 #cccccc;
+          color: $clr-dirtBrown;
+        }
       }
 
       input[type=submit] {
@@ -123,6 +130,23 @@ section[role=coming-soon] {
         background-color: #a27035;
         border: none;
         box-shadow: 0 3px 0 0 #6d4312;
+        
+        &:hover {
+          cursor: pointer;
+          background-color: #b88b4a;
+          box-shadow: 0 3px 0 0 #a27035;
+        }
+        
+        &:active {
+          background-color: #6d4312;
+          box-shadow: 0 3px 0 0 #533e2d;
+          outline: none;
+          color: #ddca7d;
+        }
+        
+        &:focus {
+          outline: 1px dotted #533e2d;
+        }
       }
 
       @media (max-width: 800px) {
