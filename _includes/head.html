@@ -6,7 +6,20 @@
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
+  <link rel="icon" type="image/png" href="/favicon.png" />
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.url }}">
   <link rel="stylesheet" href="/css/app.css">
+
+  <!-- Open graph -->
+  <meta property="og:url" content="{{ page.url | prepend: site.url}}"/>
+  <meta property="og:site_name" content="{{ site.title }}"/>
+  <meta property="og:description" content="{{ site.long_description }}"/>
+  <meta property="og:image" content="{{"/favicon.png" | prepend: site.baseurl | prepend: site.url}}"/>
+
+  <!-- Twitter card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="{{ site.title }}" />
+  <meta name="twitter:description" content="{{ site.long_description }}" />
+  <meta name="twitter:image" content="{{"/favicon.png" | prepend: site.baseurl | prepend: site.url}}" />
 </head>
