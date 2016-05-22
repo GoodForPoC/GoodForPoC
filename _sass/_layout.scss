@@ -48,7 +48,7 @@ section[role=coming-soon] {
 
   > p {
     flex: 1;
-    background-color: rgba(44, 44, 44, 0.4);
+    background-color: $clr-clearGrey;
     margin: 0rem;
     text-align: center;
 
@@ -73,19 +73,19 @@ section[role=coming-soon] {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgba(44, 44, 44, 0.4);
+    background-color: $clr-clearGrey;
 
 
     > h1 {
       @include font-garamond;
-      color: #efefef;
+      color: $clr-white;
       font-size: 45px;
       margin: 0rem;
     }
 
     > h2 {
       @include font-brandon;
-      color: #533e2d;
+      color: $clr-dirtBrown;
       font-variant: small-caps;
       font-weight: 900;
       margin: 0rem;
@@ -96,7 +96,7 @@ section[role=coming-soon] {
     }
 
     > p {
-      color: #efefef;
+      color: $clr-white;
       text-align: center;
       font-size: 20px;
       max-width: 500px;
@@ -111,14 +111,14 @@ section[role=coming-soon] {
       }
 
       input[type=email] {
-        background-color: #fff;
+        background-color: $clr-white;
         border: none;
-        color: rgba(44, 44, 44, 0.4);
+        color: $clr-clearGrey;
         @include font-brandon;
 
         &:focus {
           color: $clr-dirtBrown;
-          outline: 1px dotted #cccccc;
+          outline: 1px dotted $clr-grey;
         }
       }
 
@@ -126,28 +126,28 @@ section[role=coming-soon] {
         @include font-brandon;
         letter-spacing: 0.2px;
         font-size: 18px;
-        color: #fff;
+        color: $clr-white;
         height: 45px;
         width: 115px;
-        background-color: #a27035;
+        background-color: $clr-leather;
         border: none;
-        box-shadow: 0 3px 0 0 #6d4312;
+        box-shadow: 0 3px 0 0 $clr-mudBrown;
 
         &:hover {
           cursor: pointer;
-          background-color: #b88b4a;
-          box-shadow: 0 3px 0 0 #a27035;
+          background-color: $clr-darkTan;
+          box-shadow: 0 3px 0 0 $clr-leather;
         }
 
         &:active {
-          background-color: #6d4312;
-          box-shadow: 0 3px 0 0 #533e2d;
+          background-color: $clr-mudBrown;
+          box-shadow: 0 3px 0 0 $clr-dirtBrown;
           outline: none;
-          color: #ddca7d;
+          color: $clr-sand;
         }
 
         &:focus {
-          outline: 1px dotted #533e2d;
+          outline: 1px dotted $clr-dirtBrown;
         }
       }
 
@@ -170,14 +170,14 @@ section[role=coming-soon] {
 footer {
   @include font-brandon;
   height: 70px;
-  background-color: rgba(184, 139, 74, 0.2);
-  color: #533e2d;
+  background-color: $clr-clearTan;
+  color: $clr-dirtBrown;
   text-align: center;
   display: flex;
   justify-content: center;
   flex-direction: column;
 
   a {
-    color: #533e2d;
+    color: $clr-dirtBrown;
   }
 }
