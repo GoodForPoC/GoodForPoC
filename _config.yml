@@ -13,6 +13,15 @@ gems:
   - jekyll-paginate
   - jekyll-assets
 
+# Collections
+collections:
+  companies:
+    output: true
+    permalink: /companies/:path/
+    defaults:
+      values:
+        layout: company
+
 assets:
   compress:
     css: true
