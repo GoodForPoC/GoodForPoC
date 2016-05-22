@@ -111,11 +111,9 @@ section[role=coming-soon] {
         background-color: #fff;
         border: none;
         color: rgba(44, 44, 44, 0.4);
-        box-shadow: 0 3px 0 0 #ffffff;
         @include font-brandon;
         
         &:focus {
-          box-shadow: 0 3px 0 0 #cccccc;
           color: $clr-dirtBrown;
           outline: 1px dotted #cccccc;
         }
