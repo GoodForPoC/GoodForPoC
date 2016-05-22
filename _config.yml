@@ -1,8 +1,8 @@
 title: Good for People of Color in Tech
 email: support@goodforpocin.tech
 description: We gotta support our own.
-baseurl: /goodforpocintech
-url: "https://jalcine.github.io/goodforpocintech" # the base hostname & protocol for your site
+baseurl: /
+url: http://www.goodforpocin.tech
 twitter_username: goodforpocintech
 github_username: goodforpocintech
 
@@ -38,3 +38,11 @@ assets:
     liquid: true
     automatic_img_size: true
     automatic_img_alt : true
+
+picture:
+  markup: "picture"
+  presets:
+    default:
+      ppi: [1, 1.5, 2]
+      width: 825
+      height: 600
