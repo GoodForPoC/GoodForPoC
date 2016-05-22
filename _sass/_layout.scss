@@ -27,7 +27,7 @@ body > section[role] {
   @media (max-width: 800px) {
     & {
       height: auto;
-      display: block;
+      justify-content: center;
 
       > div.wrapper {
         padding: 20px 10px 0;
