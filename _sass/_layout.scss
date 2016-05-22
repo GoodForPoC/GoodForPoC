@@ -53,6 +53,14 @@ section[role=coming-soon] {
       color: #fff;
     }
   }
+  
+  .photo-credit {
+    margin-bottom: 10px;
+    
+    > a {
+      color: #cbcbcb;
+    }
+  }
 
   > div.wrapper {
     width: auto;
