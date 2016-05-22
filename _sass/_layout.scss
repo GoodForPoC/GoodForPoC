@@ -26,8 +26,10 @@ header {
 body > section[role] {
   @media (max-width: 800px) {
     & {
+      height: auto;
+
       > div.wrapper {
-        padding: 0px 10px;
+        padding: 20px 10px 0;
       }
     }
   }
@@ -51,15 +53,15 @@ section[role=coming-soon] {
 
     > a {
       @include font-brandon;
-      color: #fff;
+      color: $clr-white;
     }
   }
-  
+
   .photo-credit {
-    padding-bottom: 10px;
-    
+    padding: 20px 0;
+
     > a {
-      color: #cbcbcb;
+      color: $clr-pinkishGrey;
     }
   }
 
@@ -112,7 +114,7 @@ section[role=coming-soon] {
         border: none;
         color: rgba(44, 44, 44, 0.4);
         @include font-brandon;
-        
+
         &:focus {
           color: $clr-dirtBrown;
           outline: 1px dotted #cccccc;
@@ -129,20 +131,20 @@ section[role=coming-soon] {
         background-color: #a27035;
         border: none;
         box-shadow: 0 3px 0 0 #6d4312;
-        
+
         &:hover {
           cursor: pointer;
           background-color: #b88b4a;
           box-shadow: 0 3px 0 0 #a27035;
         }
-        
+
         &:active {
           background-color: #6d4312;
           box-shadow: 0 3px 0 0 #533e2d;
           outline: none;
           color: #ddca7d;
         }
-        
+
         &:focus {
           outline: 1px dotted #533e2d;
         }
