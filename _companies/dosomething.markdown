@@ -13,27 +13,31 @@ notefromeditor: "This company was submitted 3 times. Wow!"
 ---
 ## Key details
 
-### Benefits & Perks
-- Good salary
-- Paid vacation
-- 15 or more days of paid vacation
-- Paid sick leave
-- Parental leave for longer than 1 month
-- 1 month paid sabbatical every two years
-     to go anywhere in the world to volunteer
-- Up to 3 days per week to work from
-     home if you're on the tech team
-- Summer fridays
-- 401k
-- Your birthday off
+<div class="benefits-and-perks">
+  ### Benefits & Perks
+  - Good salary
+  - Paid vacation
+  - 15 or more days of paid vacation
+  - Paid sick leave
+  - Parental leave for longer than 1 month
+  - 1 month paid sabbatical every two years
+       to go anywhere in the world to volunteer
+  - Up to 3 days per week to work from
+       home if you're on the tech team
+  - Summer fridays
+  - 401k
+  - Your birthday off
+</div>
 
-### How does this company ensure that employees of color are happy?
+<div class="ensure-happiness">
+  ### How does this company ensure that employees of color are happy?
 
-#### Submission 1:
-"Transparency. Quarterly dinners where any staff member can ask questions and call out issues they see in the company. Yearly surveys to measure staff happiness and effectiveness of diversity and inclusion efforts."
+  #### Submission 1:
+  "Transparency. Quarterly dinners where any staff member can ask questions and call out issues they see in the company. Yearly surveys to measure staff happiness and effectiveness of diversity and inclusion efforts."
 
-#### Submission 2:
-"Every 6 months, we do a diversity survey to ensure this and to always improve. Also, every quarter, we have a quarterly dinner in which anyone can submit anonymous questions for the C-Level team and board members to answer."
+  #### Submission 2:
+  "Every 6 months, we do a diversity survey to ensure this and to always improve. Also, every quarter, we have a quarterly dinner in which anyone can submit anonymous questions for the C-Level team and board members to answer."
+</div>
 
 ### What next steps are being taken by this company to make it more diverse and inclusive?
 
