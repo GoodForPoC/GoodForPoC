@@ -47,7 +47,9 @@ There is a concerted effort to hire more people of color (especially women of co
 
 The company also just instituted an annual staff happiness survey that has a specific section on diversity and inclusion. This will allow the company to evaluate how they are doing in these areas and highlight places where they can do better.
 
-<div class="donation-placeholder"></div>
+<div class="donation-placeholder">
+  <!-- Dynamically insert via JS please -->
+</div>
 
 ## How you can join
 
