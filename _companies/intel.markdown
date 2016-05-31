@@ -1,6 +1,6 @@
 ---
 layout: company
-title:  Intel"
+title:  "Intel"
 date:   2016-04-17 14:51:28 -0700
 rating: 5
 categories:
@@ -30,7 +30,7 @@ description: "You may know us for our processors. But we do so much more. Throug
 <div class="ensure-happiness">
   ### How does this company ensure that employees of color are happy?
 
-  "Intel has taken feedback from people of color seriously. They are working to add programming to really educate and promote inclusivity. The person who submitted Intel mentioned that the company feels “SO much different from my last company” in a good way – they are listening and making changes. The submitter also mentioned that “people who are hostile to the idea [of taking steps to become a more diverse and inclusive company] seem to get put in their place"
+  "Intel has taken feedback from people of color seriously. They are working to add programming to really educate and promote inclusivity. The person who submitted Intel mentioned that the company feels “SO much different from my last company” in a good way – they are listening and making changes. The submitter also mentioned that “people who are hostile to the idea [of taking steps to become a more diverse and inclusive company] seem to get put in their place."
 </div>
 
 ### What next steps are being taken by this company to make it more diverse and inclusive?
@@ -48,4 +48,3 @@ description: "You may know us for our processors. But we do so much more. Throug
 
 ### How you can apply
   Visit the [Intel Careers page](http://www.intel.com/content/www/us/en/jobs/jobs-at-intel.html) to look for open roles.
-  Visit  to apply and see which jobs are available.
