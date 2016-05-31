@@ -8,8 +8,7 @@ categories:
 location: "New York, NY"
 size: small
 website: http://www.dosomething.org
-description: "One of the largest global orgs for young people and social change, our 5.1 million members in 130 countries tackle volunteer campaigns that impact every cause. Poverty. Discrimination. The environment. And everything else. Our promise: Any cause, anytime, anywhere."
-notefromeditor: "This company was submitted 3 times. Wow!"
+description: "One of the largest global organizations for young people and social change, our 5.1 million members in 130 countries tackle volunteer campaigns that impact every cause. Poverty. Discrimination. The environment. And everything else. Our promise: Any cause, anytime, anywhere."
 ---
 ## Key details
 
