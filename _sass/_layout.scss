@@ -1,26 +1,67 @@
+$max-page-width: 874px;
+
 body, html {
   padding: 0;
   margin: 0;
-  width: 100vw;
+  width: 100%;
   min-height: 100vh;
 }
 
 body {
+  @include font-garamond;
   display: flex;
   flex-direction: column;
-  @include font-garamond;
+
+  &.full-header {
+    > header[role=main] {
+      @include font-brandon;
+      height: 80px;
+      padding-top: 14px;
+      overflow: visible;
+
+      a {
+        color: $clr-dirtBrown;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+
+      h2 {
+        float: left;
+        position: relative;
+        left: 2rem;
+      }
+
+      section {
+        position: relative;
+        right: 2rem;
+        bottom: 0px;
+        float: right;
+        display: block;
+        margin: 1.75rem 0rem 0rem;
+
+        a {
+          margin: 0rem 0.75rem;
+          font-weight: normal;
+          color: $clr-black;
+        }
+      }
+    }
+  }
 }
 
-// We're going to have a full-width page.
-header {
+main[role=main] > div.wrapper {
+  max-width: $max-page-width;
+  margin: 0rem auto;
+  padding: 0rem 0.2rem;
+}
+
+header[role=main] {
+  background-color: rgba($clr-darkTan, 0.2);
   background-image: url(../images/header-stripe.svg);
   background-repeat: repeat-x;
   width: 100%;
-  height: 2rem;
-
-  &.mini {
-    height: 10px;
-  }
+  height: 10px;
+  overflow: hidden;
 }
 
 body > section[role] {
@@ -43,7 +84,6 @@ section[role=coming-soon] {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 85vh;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -196,4 +236,42 @@ footer {
   a {
     color: $clr-dirtBrown;
   }
+}
+
+header[role=company] {
+  > section {
+    display: inline;
+  }
+  > section[role=graphics], > section[role=colophon] {
+    width: 25%;
+  }
+  
+  > section[role=colophon] {
+    // FIXME: Add star rating.
+    // FIXME: Add 
+  }
+
+  > section[role=graphics] {
+    > img {
+      margin: 0rem auto;
+      height: 155px;
+      display: block;
+    }
+  }
+
+  > section[role=blurb] {
+    width: 50%;
+  }
+}
+
+h2.key-details {
+  @include font-brandon;
+  font-weight: normal;
+  width: 60%;
+  background-color: $clr-mudBrown;
+  color: $clr-white;
+  margin: 2rem auto;
+  padding: 14px 0rem;
+  text-align: center;
+  text-transform: uppercase;
 }

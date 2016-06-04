@@ -1,15 +1,37 @@
 ---
 layout: default
 ---
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-
-  <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
-    <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
-  </header>
-
-  <div class="post-content" itemprop="articleBody">
-    {{ content }}
+{{ content }}
+<main role=main>
+  <div class="wrapper">
+    <header role="company">
+      <section role="graphics">
+        <img src="{{ page.image }}" />
+      </section>
+      <section role="colophon">
+        <h3>{{ page.title }}</h3>
+        <div class="star-rating" data-rating-score="4"></div>
+        <p>
+          <small>SOCIAL GOOD</small>
+        </p>
+        <p>
+          <strong>Location:</strong> {{ page.location }}
+        </p>
+        <p>
+          <strong>Company:</strong> {{ page.size }}
+        </p>
+        <p>
+          <strong>Website:</strong> <a href="{{ page.website }}">{{page.website}}</a>
+        </p>
+      </section>
+      <section role="blurb">
+        <h5>Description:</h5>
+        <p>{{ description }}</p>
+        <strong>Editor's Note:</strong> This doesn't exist yet.
+      </section>
+    </header>
+    <hr />
+    <main role="company"></main>
+    <h2 class="key-details">Key Details</h2>
   </div>
-
-</article>
+</main>

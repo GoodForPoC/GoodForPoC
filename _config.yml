@@ -4,8 +4,7 @@ description: We gotta support our own.
 long_description: A growing list of companies providing inclusive and safe work environments for people of color in tech.
 baseurl: ""
 url: http://goodforpocin.tech
-twitter_username: goodforpocintech
-github_username: goodforpocintech
+twitter_username: goodforpoc
 
 # Build settings
 markdown: kramdown

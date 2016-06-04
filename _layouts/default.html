@@ -6,15 +6,15 @@
   <head>
     {% include head.html %}
   </head>
-  <body>
+  <body class="{{ page.body_class }}">
     <!--[if lt IE 8]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    {% include header.html header_class=page.header_class %}
+    {% include header.html %} 
     {{ content }}
     {% include footer.html %}
 
-  <script src="https://use.typekit.net/zfc4ovk.js"></script>
-  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <script src="https://use.typekit.net/zfc4ovk.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
   </body>
 </html>
