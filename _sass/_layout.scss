@@ -1,70 +1,3 @@
-<<<<<<< Updated upstream
-$max-page-width: 874px;
-
-body, html {
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  min-height: 100vh;
-}
-
-body {
-  @include font-garamond;
-  display: flex;
-  flex-direction: column;
-
-  &.full-header {
-    > header[role=main] {
-      @include font-brandon;
-      height: 80px;
-      padding-top: 14px;
-      overflow: visible;
-
-      a {
-        color: $clr-dirtBrown;
-        text-decoration: none;
-        text-transform: uppercase;
-      }
-
-      h2 {
-        float: left;
-        position: relative;
-        left: 2rem;
-      }
-
-      section {
-        position: relative;
-        right: 2rem;
-        bottom: 0px;
-        float: right;
-        display: block;
-        margin: 1.75rem 0rem 0rem;
-
-        a {
-          margin: 0rem 0.75rem;
-          font-weight: normal;
-          color: $clr-black;
-        }
-      }
-    }
-  }
-}
-
-main[role=main] > div.wrapper {
-  max-width: $max-page-width;
-  margin: 0rem auto;
-  padding: 0rem 0.2rem;
-}
-
-header[role=main] {
-  background-color: rgba($clr-darkTan, 0.2);
-  background-image: url(../images/header-stripe.svg);
-  background-repeat: repeat-x;
-  width: 100%;
-  height: 10px;
-  overflow: hidden;
-}
-=======
 @import "susy";
 @import "breakpoint";
 
@@ -72,7 +5,6 @@ header[role=main] {
 $small: 321px;
 $medium: 845px;
 $large: 1025px;
->>>>>>> Stashed changes
 
 // Susy global grid settings
 $susy: (
@@ -82,37 +14,6 @@ $susy: (
   output: float,
   gutter-position: inside,
 );
-
-<<<<<<< Updated upstream
-      > div.wrapper {
-        padding: 20px 10px 0;
-        height: auto;
-      }
-    }
-  }
-}
-
-section[role=coming-soon] {
-  flex: 1;
-  background-image: url(../images/coming-soon.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-
-  &::before {
-    background-color: $clr-clearGrey;
-    bottom: 0;
-    content: "";
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-=======
->>>>>>> Stashed changes
 
 $site-container: 85%;
 
@@ -126,18 +27,13 @@ $site-container: 85%;
   body, html {
     padding: 0;
     margin: 0;
-    // width: 100vw;
-    // min-height: 100vh;
+    width: 100vw;
+    min-height: 100vh;
     font-size: 16px;
     font-family: $serif;
     color: #181818;
   }
 
-  // body {
-  //   display: flex;
-  //   flex-direction: column;
-  //   font-family: $serif;
-  // }
 
   a { color: $clr-dirtBrown; text-decoration: underline; }
 
