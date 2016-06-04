@@ -1,37 +1,39 @@
 ---
 layout: default
 ---
-{{ content }}
-<main role=main>
-  <div class="wrapper">
-    <header role="company">
-      <section role="graphics">
-        <img src="{{ page.image }}" />
-      </section>
-      <section role="colophon">
-        <h3>{{ page.title }}</h3>
-        <div class="star-rating" data-rating-score="4"></div>
-        <p>
-          <small>SOCIAL GOOD</small>
-        </p>
-        <p>
-          <strong>Location:</strong> {{ page.location }}
-        </p>
-        <p>
-          <strong>Company:</strong> {{ page.size }}
-        </p>
-        <p>
-          <strong>Website:</strong> <a href="{{ page.website }}">{{page.website}}</a>
-        </p>
-      </section>
-      <section role="blurb">
-        <h5>Description:</h5>
-        <p>{{ description }}</p>
-        <strong>Editor's Note:</strong> This doesn't exist yet.
-      </section>
-    </header>
-    <hr />
-    <main role="company"></main>
-    <h2 class="key-details">Key Details</h2>
+{{content}}
+<header class="company-header">
+  <div class="company-image-wrapper">
+    <img src="/images/companies/{{ page.image }}" />
   </div>
-</main>
+  <div class="company-colophon-wrapper">
+    <h2>{{ page.title }}</h2>
+    <div class="company-star-wrapper">
+      {% for count in (1..page.rating) limit:5 %}&#x2605;{% endfor %}
+    </div>
+    <strong class="company-category">
+      {% for category in page.categories %}{{category}}, {% endfor %}
+    </strong>
+    <p class="company-field">
+      <strong>Location:</strong> {{ page.location }}
+    </p>
+    <p class="company-field">
+      <strong>Company Size:</strong> {{ page.size }}
+    </p>
+    <p class="company-field">
+      <strong>Website:</strong> {{ page.website }}
+    </p>
+  </div>
+  <div class="company-blurb-wrapper">
+    <div class="company-field-extended">
+      <strong>Description:</strong>
+      {% contentblock description %}
+    </div>
+    {% ifhascontent editors-note %}
+      <p class="company-field">
+        <strong>Editor's Note:</strong>
+        {% contentblock editors-note %}
+      </p>
+    {% endifhascontent %}
+  </div>
+</header>

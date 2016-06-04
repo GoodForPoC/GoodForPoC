@@ -77,6 +77,8 @@ GEM
       tilt (~> 2.0)
     jekyll-coffeescript (1.0.1)
       coffee-script (~> 2.2)
+    jekyll-contentblocks (1.2.0)
+      jekyll
     jekyll-feed (0.4.0)
     jekyll-gist (1.4.0)
       octokit (~> 4.2)
@@ -153,6 +155,7 @@ DEPENDENCIES
   breakpoint
   github-pages
   jekyll-assets
+  jekyll-contentblocks
   jekyll-paginate
   susy
 

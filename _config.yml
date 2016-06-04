@@ -11,6 +11,7 @@ markdown: kramdown
 gems:
   - jekyll-paginate
   - jekyll-assets
+  - jekyll-contentblocks
 
 # Collections
 collections:

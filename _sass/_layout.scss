@@ -44,7 +44,7 @@ $site-container: 85%;
 // ======================================================
 
 // We're going to have a full-width page.
-  header {
+  header.site-header {
     background-image: url(../images/header-stripe.svg);
     background-repeat: repeat-x;
     width: 100%;
@@ -184,4 +184,43 @@ $site-container: 85%;
 
     p { margin: 0; }
 
+  }
+
+// ======================================================
+// COMPANY STYLING
+// ======================================================
+
+  .company-header {
+    @include container(6);
+    min-height: 5rem;
+    margin: 0rem auto;
+  }
+
+  .company-image-wrapper {
+    @include span(first 1 of 6);
+    min-height: 5rem;
+
+    img { margin: 0rem auto; }
+  }
+
+  .company-colophon-wrapper {
+    @include span(2 of 6);
+    min-height: 5rem;
+
+    h2 { margin-top: 0.1rem; }
+  }
+
+  .company-blurb-wrapper {
+    @include span(last 3 of 6);
+    min-height: 5rem;
+  }
+
+  .company-star-wrapper {
+    display: block;
+    color: $clr-sand;
+    font-size: 2rem;
+  }
+
+  .company-field {
+    margin: 1px 0rem;
   }
