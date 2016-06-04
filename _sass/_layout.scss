@@ -56,7 +56,6 @@ $site-container: 85%;
   }
 
 
-
 // ======================================================
 // GENERAL BODY STYLING
 // ======================================================
@@ -292,45 +291,46 @@ $site-container: 85%;
     p { margin: 0; }
 
   }
-<<<<<<< Updated upstream
-}
 
-header[role=company] {
-  > section {
-    display: inline;
-  }
-  > section[role=graphics], > section[role=colophon] {
-    width: 25%;
-  }
-  
-  > section[role=colophon] {
-    // FIXME: Add star rating.
-    // FIXME: Add 
-  }
 
-  > section[role=graphics] {
-    > img {
-      margin: 0rem auto;
-      height: 155px;
-      display: block;
+// ======================================================
+// COMPANY PAGE STYLING
+// ======================================================
+
+  header[role=company] {
+    > section {
+      display: inline;
+    }
+    > section[role=graphics], > section[role=colophon] {
+      width: 25%;
+    }
+    
+    > section[role=colophon] {
+      // FIXME: Add star rating.
+      // FIXME: Add 
+    }
+
+    > section[role=graphics] {
+      > img {
+        margin: 0rem auto;
+        height: 155px;
+        display: block;
+      }
+    }
+
+    > section[role=blurb] {
+      width: 50%;
     }
   }
 
-  > section[role=blurb] {
-    width: 50%;
+  h2.key-details {
+    @include font-brandon;
+    font-weight: normal;
+    width: 60%;
+    background-color: $clr-mudBrown;
+    color: $clr-white;
+    margin: 2rem auto;
+    padding: 14px 0rem;
+    text-align: center;
+    text-transform: uppercase;
   }
-}
-
-h2.key-details {
-  @include font-brandon;
-  font-weight: normal;
-  width: 60%;
-  background-color: $clr-mudBrown;
-  color: $clr-white;
-  margin: 2rem auto;
-  padding: 14px 0rem;
-  text-align: center;
-  text-transform: uppercase;
-}
-=======
->>>>>>> Stashed changes
