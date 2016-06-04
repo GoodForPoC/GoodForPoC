@@ -107,7 +107,7 @@ $site-container: 85%;
   }
 
   h2.key-details {
-    @include font-brandon;
+    font-family: $sans-serif;
     font-weight: normal;
     width: 60%;
     background-color: $clr-mudBrown;
