@@ -1,12 +1,35 @@
 // FIXME: Figure out link underline trick.
 
-$font-brandonGrotesque: "brandon-grotesque";
-$font-garamondPremierPro: "garamond-premier-pro";
+// Base fonts used in site
+$sans-serif: "brandon-grotesque";
+$serif: "garamond-premier-pro";
 
-@mixin font-garamond {
-  font-family: $font-garamondPremierPro;
+// Base styling for all text
+
+strong, b { font-weight: 700; }
+em, i { font-style: italic; }
+
+h1 {
+  font-size: 42px;
+  font-weight: 500;
 }
 
-@mixin font-brandon {
-  font-family: $font-brandonGrotesque;
+h2 {
+  font-size: 36px;
+  font-weight: normal;
+}
+
+h3 {
+  font-size: 28px;
+  font-weight: normal;
+}
+
+h4 {
+  font-size: 24px;
+  font-weight: normal;
+}
+
+p {
+  font-size: 1rem; // 16px
+  line-height: 1.5;
 }

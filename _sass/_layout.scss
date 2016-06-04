@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 $max-page-width: 874px;
 
 body, html {
@@ -63,13 +64,26 @@ header[role=main] {
   height: 10px;
   overflow: hidden;
 }
+=======
+@import "susy";
+@import "breakpoint";
 
-body > section[role] {
-  @media (max-width: 800px) {
-    & {
-      height: auto;
-      justify-content: center;
+// Breakpoint sizes
+$small: 321px;
+$medium: 845px;
+$large: 1025px;
+>>>>>>> Stashed changes
 
+// Susy global grid settings
+$susy: (
+  columns: 24,
+  gutters: .25,
+  math: fluid,
+  output: float,
+  gutter-position: inside,
+);
+
+<<<<<<< Updated upstream
       > div.wrapper {
         padding: 20px 10px 0;
         height: auto;
@@ -97,145 +111,292 @@ section[role=coming-soon] {
     right: 0;
     top: 0;
   }
+=======
+>>>>>>> Stashed changes
 
-  > p {
+$site-container: 85%;
+
+
+// ======================================================
+// GENERAL STYLING
+// ======================================================
+
+  * { box-sizing: border-box; }
+
+  body, html {
+    padding: 0;
     margin: 0;
-    text-align: center;
+    // width: 100vw;
+    // min-height: 100vh;
+    font-size: 16px;
+    font-family: $serif;
+    color: #181818;
+  }
 
-    > a {
-      @include font-brandon;
-      color: $clr-white;
+  // body {
+  //   display: flex;
+  //   flex-direction: column;
+  //   font-family: $serif;
+  // }
+
+  a { color: $clr-dirtBrown; text-decoration: underline; }
+
+
+
+// ======================================================
+// HEADER STYLING
+// ======================================================
+
+// We're going to have a full-width page.
+  header {
+    background-image: url(../images/header-stripe.svg);
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 2rem;
+
+    &.mini {
+      height: 10px;
     }
   }
 
-  .photo-credit {
-    position: relative;
-    padding: 20px 0;
 
-    > a {
-      color: $clr-pinkishGrey;
-    }
+
+// ======================================================
+// GENERAL BODY STYLING
+// ======================================================
+
+  // body > section[role] {
+  //   @media (max-width: 800px) {
+  //     & {
+  //       height: auto;
+  //       justify-content: center;
+
+  //       > div.wrapper {
+  //         padding: 20px 10px 0;
+  //         height: auto;
+  //       }
+  //     }
+  //   }
+  // }
+
+  // section[role=coming-soon] {
+  //   flex: 1;
+  //   background-image: url(../images/coming-soon.png);
+  //   background-repeat: no-repeat;
+  //   background-position: center;
+  //   background-size: cover;
+  //   height: 85vh;
+  //   display: flex;
+  //   flex-direction: column;
+  //   position: relative;
+
+  //   &::before {
+  //     background-color: $clr-clearGrey;
+  //     bottom: 0;
+  //     content: "";
+  //     left: 0;
+  //     position: absolute;
+  //     right: 0;
+  //     top: 0;
+  //   }
+
+  //   > p {
+  //     margin: 0;
+  //     text-align: center;
+
+  //     > a {
+  //       font-family: $sans-serif;
+  //       color: $clr-white;
+  //     }
+  //   }
+
+  //   .photo-credit {
+  //     position: relative;
+  //     padding: 20px 0;
+
+  //     > a {
+  //       color: $clr-pinkishGrey;
+  //     }
+  //   }
+
+  //   > div.wrapper {
+  //     position: relative;
+  //     width: auto;
+  //     height: 100%;
+  //     display: flex;
+  //     flex-direction: column;
+  //     justify-content: center;
+  //     align-items: center;
+
+  //     > h1 {
+  //       font-family: $serif;
+  //       color: $clr-white;
+  //       font-size: 45px;
+  //       font-weight: 500;
+  //       margin: 0;
+  //     }
+
+  //     > h2 {
+  //       margin: 0;
+  //       font-family: $sans-serif;
+  //       font-weight: 900;
+  //       text-transform: uppercase;
+  //       letter-spacing: 2px;
+  //       color: $clr-dirtBrown;
+  //     }
+
+  //     > h1, > h2 {
+  //       text-align: center;
+  //     }
+
+  //     > p {
+  //       color: $clr-white;
+  //       text-align: center;
+  //       font-size: 20px;
+  //       max-width: 500px;
+  //       font-weight: 500;
+  //     }
+
+  //     > form {
+  //       input[type=submit], input[type=email] {
+  //         height: 25px;
+  //         width: 275px;
+  //         padding: 10px;
+  //         font-size: 18px;
+  //       }
+
+  //       input[type=email] {
+  //         -webkit-appearance: none;
+  //         font-family: $sans-serif;
+  //         background-color: $clr-white;
+  //         border: none;
+  //         color: $clr-clearGrey;
+
+  //         &:focus {
+  //           color: $clr-dirtBrown;
+  //           outline: 1px dotted $clr-grey;
+  //         }
+  //       }
+
+  //       input[type=submit] {
+  //         width: 115px;
+  //         height: 45px;
+  //         border: none;
+  //         border-radius: 5px;
+  //         background-color: $clr-leather;
+  //         -webkit-appearance: none;
+  //         box-shadow: 0 3px 0 0 $clr-mudBrown;
+  //         font-family: $sans-serif;
+  //         font-size: 18px;
+  //         letter-spacing: 1px;
+  //         color: $clr-white;
+
+  //         &:hover {
+  //           cursor: pointer;
+  //           background-color: $clr-darkTan;
+  //           box-shadow: 0 3px 0 0 $clr-leather;
+  //         }
+
+  //         &:active {
+  //           background-color: $clr-mudBrown;
+  //           box-shadow: 0 3px 0 0 $clr-dirtBrown;
+  //           outline: none;
+  //           color: $clr-sand;
+  //         }
+
+  //         &:focus {
+  //           outline: 1px dotted $clr-dirtBrown;
+  //         }
+  //       }
+
+  //       @media (max-width: 800px) {
+  //         & {
+  //           display: flex;
+  //           align-items: center;
+  //           flex-direction: column;
+
+  //           input[type=submit] {
+  //             margin-top: 5px;
+  //             width: 150px;
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
+
+
+
+// ======================================================
+// WHY STYLING
+// ======================================================
+
+  .page-body {
+    @include container($site-container);
   }
 
-  > div.wrapper {
-    position: relative;
-    width: auto;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  .creator {
+    margin-bottom: 10px;
+    padding: 10px;
+    max-width: 275px;
+    font-family: $sans-serif;
+    &+.creator { margin-top: 20px;
+      @include breakpoint($medium){
+        margin-top: 0;
+      }
+    }
 
-    > h1 {
-      @include font-garamond;
-      color: $clr-white;
-      font-size: 45px;
+    @include breakpoint($medium){
+        @include gallery(4 of 12); // 3 columns of items
+    }
+
+    .creator-title {
+      margin-bottom: 10px;
+      font-size: 1.125rem; // 18px
       font-weight: 500;
-      margin: 0;
-    }
-
-    > h2 {
-      margin: 0;
-      @include font-brandon;
-      font-weight: 900;
       text-transform: uppercase;
-      letter-spacing: 2px;
-      color: $clr-dirtBrown;
+      letter-spacing: .03125rem; // .5px
     }
+    .creator-img { max-width: 100%; }
 
-    > h1, > h2 {
-      text-align: center;
-    }
+    .creator-bio {}
+    .creator-website { margin-bottom: 15px; }
+    .creator-social {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      li {
+        display: inline-block;
+        &+li { padding-left: 10px; }
 
-    > p {
-      color: $clr-white;
-      text-align: center;
-      font-size: 20px;
-      max-width: 500px;
-      font-weight: 500;
-    }
-
-    > form {
-      input[type=submit], input[type=email] {
-        height: 25px;
-        width: 275px;
-        padding: 10px;
-        font-size: 18px;
-      }
-
-      input[type=email] {
-        -webkit-appearance: none;
-        @include font-brandon;
-        background-color: $clr-white;
-        border: none;
-        color: $clr-clearGrey;
-
-        &:focus {
-          color: $clr-dirtBrown;
-          outline: 1px dotted $clr-grey;
-        }
-      }
-
-      input[type=submit] {
-        width: 115px;
-        height: 45px;
-        border: none;
-        border-radius: 5px;
-        background-color: $clr-leather;
-        -webkit-appearance: none;
-        box-shadow: 0 3px 0 0 $clr-mudBrown;
-        @include font-brandon;
-        font-size: 18px;
-        letter-spacing: 1px;
-        color: $clr-white;
-
-        &:hover {
-          cursor: pointer;
-          background-color: $clr-darkTan;
-          box-shadow: 0 3px 0 0 $clr-leather;
-        }
-
-        &:active {
-          background-color: $clr-mudBrown;
-          box-shadow: 0 3px 0 0 $clr-dirtBrown;
-          outline: none;
-          color: $clr-sand;
-        }
-
-        &:focus {
-          outline: 1px dotted $clr-dirtBrown;
-        }
-      }
-
-      @media (max-width: 800px) {
-        & {
-          display: flex;
-          align-items: center;
-          flex-direction: column;
-
-          input[type=submit] {
-            margin-top: 5px;
-            width: 150px;
-          }
-        }
+        a {
+          color: $clr-darkTan;
+          text-decoration: none;
+         }
       }
     }
   }
-}
 
-footer {
-  @include font-brandon;
-  height: 70px;
-  background-color: $clr-tan;
-  color: $clr-dirtBrown;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
 
-  a {
+
+// ======================================================
+// FOOTER STYLING
+// ======================================================
+
+  .site-footer {
+    font-family: $sans-serif;
+    height: 70px;
+    background-color: $clr-tan;
     color: $clr-dirtBrown;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    p { margin: 0; }
+
   }
+<<<<<<< Updated upstream
 }
 
 header[role=company] {
@@ -275,3 +436,5 @@ h2.key-details {
   text-align: center;
   text-transform: uppercase;
 }
+=======
+>>>>>>> Stashed changes
