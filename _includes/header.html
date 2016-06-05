@@ -1,9 +1,5 @@
-<header role="main">
-  <h2>
-    <a href="/" title="Good for POC - Home">Good for PoC</a>
-  </h2>
-  <section>
-    <a href="/why/" title="Why Good for POC?">WHY?</a>
-    <a href="/subscribe/" title="Subscribe to Our Updates">SUBSCRIBE</a>
-  </section>
-</header>
+{% if page.header_type == 'full' %}
+  {% include header_full.html %}
+{% else %}
+  {% include header_mini.html %}
+{% endif %}
