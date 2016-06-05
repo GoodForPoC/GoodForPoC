@@ -37,7 +37,15 @@ $site-container: 85%;
 
   a { color: $clr-dirtBrown; text-decoration: underline; }
 
-
+  hr {
+    width: 874px;
+    height: 2px;
+    border: solid 1px #979797;
+    border: solid 1px $clr-grey;
+    margin: 3.125rem 0rem;
+    background-color: $clr-grey;
+    margin: 3.125rem auto;
+  }
 
 // ======================================================
 // HEADER STYLING
@@ -194,6 +202,7 @@ $site-container: 85%;
     @include container(6);
     min-height: 5rem;
     margin: 0rem auto;
+
   }
 
   .company-image-wrapper {

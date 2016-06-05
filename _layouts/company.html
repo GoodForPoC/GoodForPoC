@@ -4,7 +4,7 @@ layout: default
 {{content}}
 <header class="company-header">
   <div class="company-image-wrapper">
-    <img src="/images/companies/{{ page.image }}" />
+    <img src="{{ page.image }}" />
   </div>
   <div class="company-colophon-wrapper">
     <h2>{{ page.title }}</h2>
@@ -14,8 +14,7 @@ layout: default
     <strong class="company-category">
       {% for category in page.categories %}{{category}}, {% endfor %}
     </strong>
-    <p class="company-field">
-      <strong>Location:</strong> {{ page.location }}
+    <p class="company-field"> <strong>Location:</strong> {{ page.location }}
     </p>
     <p class="company-field">
       <strong>Company Size:</strong> {{ page.size }}
@@ -37,3 +36,4 @@ layout: default
     {% endifhascontent %}
   </div>
 </header>
+<hr>
