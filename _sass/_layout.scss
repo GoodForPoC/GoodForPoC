@@ -18,15 +18,6 @@ $susy: (
 $site-container: 85%;
 
 
-@mixin vertical-align($position: relative) {
-  position: $position;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-
 // ======================================================
 // GENERAL STYLING
 // ======================================================
@@ -154,19 +145,21 @@ $site-container: 85%;
         }
 
         input[type=email] {
-          -webkit-appearance: none;
-          font-family: $sans-serif;
-          background-color: $clr-white;
           padding: 15px;
           border: none;
+          background-color: $clr-white;
+          -webkit-appearance: none;
+          font-family: $sans-serif;
           color: #878787;
           &:focus {
-            color: $clr-dirtBrown;
             outline: 1px dotted $clr-grey;
+            color: $clr-dirtBrown;
           }
         }
 
         input[type=submit] {
+          margin-top: 10px;
+          @include breakpoint($medium){ margin-top: 0; }
           width: 115px;
           height: 45px;
           border: none;
