@@ -1,5 +1,6 @@
 ---
 layout: company
+header_type: full
 title:  "Clover Health"
 date:   2016-04-17 14:51:28 -0700
 rating: 5
