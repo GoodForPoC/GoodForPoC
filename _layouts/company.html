@@ -1,36 +1,38 @@
 ---
 layout: default
+header_type: full
 ---
-{{content}}
+
+<div class="page-body">
 <header class="company-header">
-  <div class="company-image-wrapper">
-    <img src="{{ page.image }}" />
-  </div>
-  <div class="company-colophon-wrapper">
-    <h2>{{ page.title }}</h2>
-    <div class="company-star-wrapper">
+  <img class="company-logo" src="{{ page.image }}" alt="" />
+
+  <div class="company-info">
+    <h2 class="company-info_title">{{ page.title }}</h2>
+    <div class="company-info_rating">
       {% for count in (1..page.rating) limit:5 %}&#x2605;{% endfor %}
     </div>
-    <strong class="company-category">
-      {% for category in page.categories %}{{category}}, {% endfor %}
-    </strong>
-    <p class="company-field"> <strong>Location:</strong> {{ page.location }}
-    </p>
-    <p class="company-field">
-      <strong>Company Size:</strong> {{ page.size }}
-    </p>
-    <p class="company-field">
-      <strong>Website:</strong> {{ page.website }}
-    </p>
-  </div>
-  <div class="company-blurb-wrapper">
-    <div class="company-field-extended">
-      <strong>Description:</strong>
+    <ul class="company-info_category">
+      {% for category in page.categories %}<li>{{category}},</li> {% endfor %}
+    </ul>
 
-    </div>
-      <p class="company-field">
-        <strong>Editor's Note:</strong>
-      </p>
+    <ul class="company-info_items">
+      <li><strong>Location:</strong> {{ page.location }}</li>
+      <li><strong>Company Size:</strong> {{ page.size }}</li>
+      <li><strong>Website:</strong> {{ page.website }}</li>
+    </ul>
+  </div>
+
+  <div class="company-info_description">
+    <h5>Description:</h5>
+    <p>company description goes here</p>
+
+    <!-- Should be wrapped in an if tag <strong>Editor's Note:</strong> -->
   </div>
 </header>
+
 <hr>
+
+{{content}}
+
+</div>
