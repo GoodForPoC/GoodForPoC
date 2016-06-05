@@ -12,6 +12,7 @@ gems:
   - jekyll-paginate
   - jekyll-assets
   - jekyll-contentblocks
+  - susy
 
 # Collections
 collections:
