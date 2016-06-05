@@ -22,7 +22,6 @@ description: "Clover is a new health insurance company building a team of people
   - Paid sick leave
   - Parental leave for longer than 1 month
   - Catered lunch
-
 </div>
 
 <div class="ensure-happiness">
