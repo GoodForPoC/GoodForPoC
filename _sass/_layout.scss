@@ -32,6 +32,7 @@ $site-container: 85%;
     font-size: 16px;
     font-family: $serif;
     color: #181818;
+    &
   }
 
 
@@ -50,9 +51,7 @@ $site-container: 85%;
     width: 100%;
     height: 2rem;
 
-    &.mini {
-      height: 10px;
-    }
+    &.mini { height: 10px; }
   }
 
 
@@ -60,8 +59,98 @@ $site-container: 85%;
 // COMING SOON STYLING
 // ======================================================
 
-  .coming-soon { max-width: 500px; }
+  .coming-soon {
+    min-height: calc(100vh - 70px);
+    background-image: url('../images/coming-soon.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
 
+    .coming-soon--wrapper {
+      @include container(500px);
+      position: relative;
+
+      .coming-soon--logo {
+        margin: 0;
+        font-family: $sans-serif;
+        font-size: 1.6875rem; // 27px
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: $clr-dirtBrown;
+      }
+
+      .coming-soon--title {
+        margin: 0;
+        font-size: 2.8125rem; // 45px
+        font-weight: 500;
+        color: $clr-white;
+      }
+
+      p {
+        font-size: 1.25rem; // 20px;
+        color: $clr-white;
+      }
+
+      .coming-soon--form {
+        input[type=submit],
+        input[type=email] {
+          height: 45px;
+          width: 275px;
+          font-size: 18px;
+        }
+
+        input[type=email] {
+          -webkit-appearance: none;
+          font-family: $sans-serif;
+          background-color: $clr-white;
+          padding: 15px;
+          border: none;
+          color: #878787;
+          &:focus {
+            color: $clr-dirtBrown;
+            outline: 1px dotted $clr-grey;
+          }
+        }
+
+        input[type=submit] {
+          width: 115px;
+          height: 45px;
+          border: none;
+          border-radius: 5px;
+          background-color: $clr-leather;
+          -webkit-appearance: none;
+          box-shadow: 0 3px 0 0 $clr-mudBrown;
+          font-family: $sans-serif;
+          font-size: 18px;
+          letter-spacing: 1px;
+          color: $clr-white;
+          &:hover {
+            cursor: pointer;
+            background-color: $clr-darkTan;
+            box-shadow: 0 3px 0 0 $clr-leather;
+          }
+          &:active {
+            background-color: $clr-mudBrown;
+            box-shadow: 0 3px 0 0 $clr-dirtBrown;
+            outline: none;
+            color: $clr-sand;
+          }
+          &:focus {
+            outline: 1px dotted $clr-dirtBrown;
+          }
+        }
+      }
+
+    }
+
+  .coming-soon--img-credit a {
+    font-family: $sans-serif;
+    font-size: 0.875rem; // 14px
+    color: #CBCBCB;
+  }
+}
 
 
 
