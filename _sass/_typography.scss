@@ -25,11 +25,13 @@ h3 {
 }
 
 h4 {
+  margin-bottom: 15px;
   font-size: 24px;
   font-weight: normal;
 }
 
 p {
+  font-family: $sans-serif;
   font-size: 1rem; // 16px
   line-height: 1.5;
 }
