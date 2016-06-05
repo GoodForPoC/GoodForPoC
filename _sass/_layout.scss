@@ -229,6 +229,47 @@ $site-container: 75%;
   }
 
 
+// ======================================================
+// HOME STYLING
+// ======================================================
+  .home-header {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    background-image: url('../images/home-header.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    // @include breakpoint($large){ height: 450px; }
+
+    .home-header_intro {
+      @include container($site-container);
+      @include breakpoint($large){ @include container(780px); }
+      margin-bottom: 35px;
+      font-size: 40px;
+      font-weight: normal;
+      text-align: center;
+      color: $clr-white;
+      @include breakpoint($medium){ font-size: 2.8125rem; }
+    }
+    .home-header_learn {
+      display: block;
+      width: 180px;
+      margin: 0 auto;
+      padding: 15px 30px;
+      border-radius: 5px;
+      box-shadow: 0 3px 0 0 $clr-mudBrown;
+      background-color: $clr-leather;
+      font-family: $sans-serif;
+      font-size: 18px;
+      font-weight: 500;
+      letter-spacing: 0.0125rem;
+      text-decoration: none;
+      text-align: center;
+      text-transform: uppercase;
+      color: $clr-white;
+    }
+  }
+
 
 
 // ======================================================
@@ -372,7 +413,7 @@ $site-container: 75%;
 // ======================================================
   .site-footer {
     height: 100%;
-    // margin-top: 75px; //please uncomment when we go live
+    margin-top: 75px; //please uncomment when we go live
     padding: 20px 60px;
     background: url('../images/g4poc-texture.png');
     font-family: $sans-serif;
