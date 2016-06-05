@@ -15,13 +15,47 @@ $susy: (
   gutter-position: inside,
 );
 
-$site-container: 75%;
+
+
+// ======================================================
+// VARIABLES FOR GENERAL USAGE
+// ======================================================
+  // Site font stacks
+  $sans-serif: "brandon-grotesque";
+  $serif: "garamond-premier-pro";
+
+  // Site Container
+  $site-container: 75%;
+
+  // Site Colors
+  $white: #ffffff;
+  $black: #181818;
+  $gray: #cccccc;
+  $darkgray: #979797;
+  $lightgold: #ddca7d;
+  $tan: #f1e8db;
+  $darktan: #b88b4a;
+  $lightbrown: #a27035;
+  $brown: #6d4312;
+  $darkbrown: #533e2d;
+
+  // Mix-ins for repeating elements
+  @mixin site-buttons($radius, $font-size) {
+    border-radius: $radius;
+    background-color: $lightbrown;
+    -webkit-appearance: none;
+    box-shadow: 0 3px 0 0 $brown;
+    font-family: $sans-serif;
+    font-size: $font-size;
+    letter-spacing: 1px;
+    color: $white;
+  }
+
 
 
 // ======================================================
 // GENERAL STYLING
 // ======================================================
-
   * { box-sizing: border-box; }
 
   body, html {
@@ -30,36 +64,67 @@ $site-container: 75%;
     min-height: 100vh;
     font-size: 16px;
     font-family: $serif;
-    color: #181818;
+    color: $black;
   }
 
 
-  a { color: $clr-dirtBrown; text-decoration: underline; }
+  a { color: $darkbrown; text-decoration: underline; }
 
   // Commenting this out. @jacky, what did you want to do with this?
   // hr {
   //   width: 874px;
   //   height: 2px;
   //   border: solid 1px #979797;
-  //   border: solid 1px $clr-grey;
+  //   border: solid 1px gray;
   //   margin: 3.125rem 0rem;
-  //   background-color: $clr-grey;
+  //   background-color: gray;
   //   margin: 3.125rem auto;
   // }
 
   hr {
     margin: 50px 0;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid $gray;
     border-left: none;
     border-right: none;
     border-bottom: none;
+  }
+
+  // Typography
+  strong, b { font-weight: 700; }
+  em, i { font-style: italic; }
+
+  h1 {
+    font-size: 42px;
+    font-weight: 500;
+  }
+
+  h2 {
+    font-size: 36px;
+    font-weight: normal;
+  }
+
+  h3 {
+    font-size: 28px;
+    font-weight: normal;
+  }
+
+  h4 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-weight: normal;
+  }
+
+  p {
+    font-family: $sans-serif;
+    font-size: 1rem; // 16px
+    line-height: 1.5;
   }
 
 // ======================================================
 // HEADER STYLING
 // ======================================================
 
-// We're going to have a full-width page.
+  // We're going to have a full-width page.
   .site-header {
     width: 100%;
     // height: 96px;
@@ -85,7 +150,7 @@ $site-container: 75%;
       text-transform: uppercase;
       text-align: center;
       letter-spacing: 1px;
-      color: $clr-dirtBrown;
+      color: $darkbrown;
       @include breakpoint($medium){ float: left; margin: 0; }
       a { text-decoration: none; }
     }
@@ -103,7 +168,7 @@ $site-container: 75%;
         font-size: 1rem;
         text-transform: uppercase;
         &+li { margin-left: 10px; }
-        a { color: $clr-black; text-decoration: none; }
+        a { color: $black; text-decoration: none; }
       }
     }
   }
@@ -138,19 +203,19 @@ $site-container: 75%;
         font-weight: 900;
         text-transform: uppercase;
         letter-spacing: 1px;
-        color: $clr-dirtBrown;
+        color: $darkbrown;
       }
 
       .coming-soon--title {
         margin: 0;
         font-size: 2.8125rem; // 45px
         font-weight: 500;
-        color: $clr-white;
+        color: $white;
       }
 
       p {
         font-size: 1.25rem; // 20px;
-        color: $clr-white;
+        color: $white;
       }
 
       .coming-soon--form {
@@ -164,13 +229,13 @@ $site-container: 75%;
         input[type=email] {
           padding: 15px;
           border: none;
-          background-color: $clr-white;
+          background-color: $white;
           -webkit-appearance: none;
           font-family: $sans-serif;
           color: #878787;
           &:focus {
-            outline: 1px dotted $clr-grey;
-            color: $clr-dirtBrown;
+            $outline: 1px dotted $gray;
+            color: $darkbrown;
           }
         }
 
@@ -181,26 +246,26 @@ $site-container: 75%;
           height: 45px;
           border: none;
           border-radius: 5px;
-          background-color: $clr-leather;
+          background-color: $lightbrown;
           -webkit-appearance: none;
-          box-shadow: 0 3px 0 0 $clr-mudBrown;
+          box-shadow: 0 3px 0 0 $brown;
           font-family: $sans-serif;
           font-size: 18px;
           letter-spacing: 1px;
-          color: $clr-white;
+          color: $white;
           &:hover {
             cursor: pointer;
-            background-color: $clr-darkTan;
-            box-shadow: 0 3px 0 0 $clr-leather;
+            background-color: $darktan;
+            box-shadow: 0 3px 0 0 $lightbrown;
           }
           &:active {
-            background-color: $clr-mudBrown;
-            box-shadow: 0 3px 0 0 $clr-dirtBrown;
+            background-color: $brown;
+            box-shadow: 0 3px 0 0 $darkbrown;
             outline: none;
-            color: $clr-sand;
+            color: $lightgold;
           }
           &:focus {
-            outline: 1px dotted $clr-dirtBrown;
+            outline: 1px dotted $darkbrown;
           }
         }
       }
@@ -229,6 +294,7 @@ $site-container: 75%;
   }
 
 
+
 // ======================================================
 // HOME STYLING
 // ======================================================
@@ -248,7 +314,7 @@ $site-container: 75%;
       font-size: 40px;
       font-weight: normal;
       text-align: center;
-      color: $clr-white;
+      color: $white;
       @include breakpoint($medium){ font-size: 2.8125rem; }
     }
     .home-header_learn {
@@ -257,8 +323,8 @@ $site-container: 75%;
       margin: 0 auto;
       padding: 15px 30px;
       border-radius: 5px;
-      box-shadow: 0 3px 0 0 $clr-mudBrown;
-      background-color: $clr-leather;
+      box-shadow: 0 3px 0 0 $brown;
+      background-color: $lightbrown;
       font-family: $sans-serif;
       font-size: 18px;
       font-weight: 500;
@@ -266,7 +332,7 @@ $site-container: 75%;
       text-decoration: none;
       text-align: center;
       text-transform: uppercase;
-      color: $clr-white;
+      color: $white;
     }
   }
 
@@ -306,8 +372,8 @@ $site-container: 75%;
     font-family: $sans-serif;
     font-weight: normal;
     width: 60%;
-    background-color: $clr-mudBrown;
-    color: $clr-white;
+    background-color: $brown;
+    color: $white;
     margin: 2rem auto;
     padding: 14px 0rem;
     text-align: center;
@@ -342,7 +408,7 @@ $site-container: 75%;
 
   .company-star-wrapper {
     display: block;
-    color: $clr-sand;
+    color: $lightgold;
     font-size: 2rem;
   }
 
@@ -354,7 +420,7 @@ $site-container: 75%;
 
 
 // ======================================================
-// WHY STYLING
+// ABOUT STYLING
 // ======================================================
 
   .creator {
@@ -390,7 +456,7 @@ $site-container: 75%;
         &+li { padding-left: 10px; }
 
         a {
-          color: $clr-darkTan;
+          color: $darktan;
           text-decoration: none;
          }
       }
@@ -417,7 +483,7 @@ $site-container: 75%;
     padding: 20px 60px;
     background: url('../images/g4poc-texture.png');
     font-family: $sans-serif;
-    color: $clr-dirtBrown;
+    color: $darkbrown;
     text-align: center;
     @include breakpoint($medium){ height: 70px; padding: 5px 0; }
 
