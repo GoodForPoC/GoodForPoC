@@ -17,7 +17,7 @@ key_details:
   - "Childcare"
 ---
 
-<!-- {% contentfor description %} -->
+
 Booz Allen Hamilton has been at the forefront of strategy and technology for
 more than 100 years. Today, the firm provides management and technology
 consulting and engineering services to leading Fortune 500 corporations,
@@ -26,23 +26,23 @@ public and private sector clients to solve their most difficult challenges
 through a combination of consulting, analytics, mission operations,
 technology, systems delivery, cybersecurity, engineering, and innovation
 expertise.
-<!-- {% endcontentfor %} -->
 
-<!-- {% contentfor ensure-happiness %} -->
+
+
 Representatives from Resource Management, Diversity and Inclusion, and region
 and racial specific group leadership facilitate meetings, provide tips, and
 answer questions for those working at the company.
-<!-- {% endcontentfor %} -->
 
-<!-- {% contentfor next-steps %} -->
+
+
 _No answer given._
-<!-- {% endcontentfor %} -->
 
-<!-- {% contentfor hiring-process %} -->
+
+
 Very laid back. It focused on my ability to do the job. Because of my
 qualifications, they skipped a phone screen and brought me right in.
-<!-- {% endcontentfor %} -->
 
-<!-- {% contentfor how-to-apply %} -->
+
+
 Attend a recruiting event or apply at http://www.boozallen.com/careers.
-<!-- {% endcontentfor %} -->
+
