@@ -12,13 +12,6 @@ gems:
   - jekyll-paginate
   - jekyll-assets
   - jekyll-contentblocks
-  - susy
-
-whitelist:
-  - susy
-
-require:
-  - susy
 
 # Collections
 collections:
