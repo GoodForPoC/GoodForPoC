@@ -71,12 +71,11 @@ $susy: (
   a { color: $darkbrown; text-decoration: underline; }
 
   hr {
-    margin: 50px auto;
+    margin: 50px 0;
     border-top: 1px solid $gray;
     border-left: none;
     border-right: none;
     border-bottom: none;
-    width: 80%;
   }
 
   // Typography
@@ -333,6 +332,7 @@ $susy: (
 // ======================================================
 
   .company-header {
+    @include container(6);
     ul { margin: 10px 0; padding: 0; list-style: none; font-family: $sans-serif; }
     .company-logo {
       max-width: 200px;
