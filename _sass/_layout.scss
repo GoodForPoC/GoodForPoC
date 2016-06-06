@@ -335,8 +335,10 @@ $susy: (
     @include container(6);
     ul { margin: 10px 0; padding: 0; list-style: none; font-family: $sans-serif; }
     .company-logo {
-      max-width: 200px;
-      @include span(first 1 of 6);
+      width: 100%;
+      @include breakpoint($medium){
+        @include span(first 1 of 6);
+      }
     }
     .company-info {
       @include breakpoint($medium){ @include span(2 of 6); }
@@ -354,7 +356,6 @@ $susy: (
     .company-info_description {
       @include breakpoint($medium){ @include span(last 3 of 6); }
       margin: 45px 0 35px;
-      @include breakpoint($medium){ @include span(last 3 of 6); }
     }
   }
 
