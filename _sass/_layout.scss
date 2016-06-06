@@ -337,7 +337,7 @@ $susy: (
       max-width: 200px;
     }
     .company-info {
-      @include breakpoint($medium){ width: 25%; display: inline-block; }
+      @include breakpoint($medium){ @include span(first 1 of 6); }
       .company-info_title { margin: 0 0 5px 0; }
       .company-info_rating { color: #f5dd7d; }
       .company-info_category li {
@@ -350,7 +350,7 @@ $susy: (
       .company-info_items { margin-top: 15px; li { margin: 5px 0; } }
     }
     .company-info_description {
-      @include breakpoint($medium){ width: 50%; display: inline-block; }
+      @include breakpoint($medium){ @include span(2 of 6); }
       margin: 45px 0 35px;
       // @include breakpoint($medium){ @include span(last 3 of 6); }
     }
@@ -360,7 +360,7 @@ $susy: (
     font-family: $sans-serif;
     font-size: 18px;
     .company-results_benefits {
-      @include breakpoint($medium){ width: 25%; display: inline-block; }
+      @include breakpoint($medium){ @include span(last 3 of 6); }
     }
 
     h2 {
