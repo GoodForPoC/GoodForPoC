@@ -71,11 +71,12 @@ $susy: (
   a { color: $darkbrown; text-decoration: underline; }
 
   hr {
-    margin: 50px 0;
+    margin: 50px auto;
     border-top: 1px solid $gray;
     border-left: none;
     border-right: none;
     border-bottom: none;
+    width: 80%;
   }
 
   // Typography
@@ -352,7 +353,7 @@ $susy: (
     .company-info_description {
       @include breakpoint($medium){ @include span(2 of 6); }
       margin: 45px 0 35px;
-      // @include breakpoint($medium){ @include span(last 3 of 6); }
+      @include breakpoint($medium){ @include span(last 3 of 6); }
     }
   }
 
