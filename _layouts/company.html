@@ -10,7 +10,7 @@ header_type: full
   <div class="company-info">
     <h2 class="company-info_title">{{ page.title }}</h2>
     <div class="company-info_rating">
-      {% for count in (1..page.rating) limit:5 %}&#x2605;{% endfor %}
+      {% for count in (1..page.rating) limit:5 %}&#x2605; {% endfor %}
     </div>
     <ul class="company-info_category">
       {% for category in page.categories %}<li>{{category}},</li> {% endfor %}
@@ -24,8 +24,8 @@ header_type: full
   </div>
 
   <div class="company-info_description">
-    <h5>Description:</h5>
-    <p>company description goes here</p>
+    <p><strong>Description:</strong></p>
+    <p>{{ page.description }}</p>
 
     <!-- Should be wrapped in an if tag <strong>Editor's Note:</strong> -->
   </div>
@@ -33,6 +33,8 @@ header_type: full
 
 <hr>
 
-{{content}}
+<div class="company-results">
+  {{content}}
+</div>
 
 </div>
