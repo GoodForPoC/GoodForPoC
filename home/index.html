@@ -7,8 +7,18 @@ header_type: full
   <a class="home-header_learn" href="/why" target="_blank">Learn more</a>
 </div>
 <div class="page-body home">
+<div class="companies">
   {% assign companies = site.companies %}
     {% for company in companies %}
-      {{ company.title }}
+      <div class="company-single">
+      <img class="company-logo" src="{{ company.image }}" alt="{{ company.title }}">
+      <h3 class="company-info_title">{{ company.title }}</h3>
+      <p class="company-info_description">{{ company.description | truncatewords: 15 }}</p>
+      <div class="company-info_footer">
+        <ul class="company-info_category">{% for category in company.categories %}<li>{{category}}{% unless forloop.last %}, {% endunless %}</li> {% endfor %}</ul>
+        <a href="{{company.url}}">Read more</a>
+      </div>
+      </div>
     {% endfor %}
+</div>
 </div>

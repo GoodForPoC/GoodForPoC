@@ -13,7 +13,7 @@ header_type: full
       {% for count in (1..page.rating) limit:5 %}&#x2605; {% endfor %}
     </div>
     <ul class="company-info_category">
-      {% for category in page.categories %}<li>{{category}},</li> {% endfor %}
+      {% for category in page.categories %}<li>{{category}}{% unless forloop.last %}, {% endunless %}</li> {% endfor %}
     </ul>
 
     <ul class="company-info_items">

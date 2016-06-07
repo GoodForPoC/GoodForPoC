@@ -165,6 +165,58 @@ $susy: (
 
 
 // ======================================================
+// HOME PAGE STYLING
+// ======================================================
+
+  .company-single {
+    max-width: 300px;
+    border: 1px solid #E8E8E8;
+    padding: 15px 20px;
+    margin-bottom: 30px;
+    @include breakpoint($medium){
+        @include gallery(6 of 12); // 2 columns of items
+    }
+    @include breakpoint($large){
+        @include gallery(4 of 12); // 3 columns of items
+    }
+
+    .company-logo { max-width: 100%; }
+    .company-info_title { font-size: 21px; text-align: center; }
+
+    .company-info_footer {
+      overflow: auto;
+      width: 100%;
+
+      .company-info_category {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        float: left;
+
+        li {
+          display: inline-block;
+          font-family: $sans-serif;
+          font-size: 12px;
+          text-transform: uppercase;
+          color: #393939;
+        }
+      }
+
+      &>a {
+        float: right;
+        font-family: $sans-serif;
+        font-size: 13px;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+    }
+
+
+  }
+
+
+
+// ======================================================
 // COMING SOON STYLING
 // ======================================================
 
