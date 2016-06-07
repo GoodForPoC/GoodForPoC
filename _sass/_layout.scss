@@ -335,13 +335,20 @@ $susy: (
     @include container(6);
     ul { margin: 10px 0; padding: 0; list-style: none; font-family: $sans-serif; }
     .company-logo {
-      width: 100%;
+      max-height: 250px;
+      margin: 0rem auto;
+      display: block;
+
       @include breakpoint($medium){
         @include span(first 1 of 6);
       }
     }
     .company-info {
-      @include breakpoint($medium){ @include span(2 of 6); }
+      text-align: center;
+      @include breakpoint($medium){
+        text-align: left;
+        @include span(2 of 6);
+      }
       .company-info_title { margin: 0 0 5px 0; }
       .company-info_rating { color: #f5dd7d; }
       .company-info_category li {
