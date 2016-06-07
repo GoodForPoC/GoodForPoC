@@ -7,39 +7,8 @@ header_type: full
   <a class="home-header_learn" href="/why" target="_blank">Learn more</a>
 </div>
 <div class="page-body home">
-  <h1>Code of Conduct</h1>
-
-  <p>All events run by Good for People of Color are safe spaces where you can express yourself without fear of judgment or harassment. All participants and visitors are expected to treat other participants, visitors, staff, and the general public with respect. Under the umbrella of respect, we expect all participants be mindful of their speech and behaviors both in person and on social media. Particularly, we want to remind participants and visitors to refrain from making assumptions about another's identity, experience, and preferred pronouns. Additionally, we expect that you will not photograph or record anyone without consent.</p>
-
-  <h4>Please remember:</h4>
-  <ul>
-    <li>“No” means no.</li>
-    <li>“Stop” means stop.</li>
-    <li>“Go away” means go away.</li>
-    <li>Attire is not consent.</li>
-  </ul>
-
-  <hr>
-
-  <h3>Social Rules</h3>
-  <p><strong>The Shower Clap:</strong> If there’s a lot of noise in the room, we’ll employ the Shower Clap. (We’ll always demonstrate what this is at the beginning of events.) </p>
-  <p><strong>One Mic:</strong> When someone is speaking, please respect them by listening with open ears to what they have to say. When it’s your turn, you can speak up and the same respect will be given to you. </p>
-  <p><strong>Cordially Disagree:</strong> While we can’t all be expected to always agree with each other, we have to make space for others and their opinions. Even if you don’t agree, you can agree to disagree with someone else, regardless of what you believe is right.  (<strong>Note:</strong> If what you disagree with falls into the category of assault, harassment, or abuse, please report that to us so that we can resolve the situation swiftly.)</p>
-
-  <hr>
-
-  <h3>Liability Statement:</h3>
-  <p>Good for People of Color is not responsible for lost, stolen, or damaged property, or for injuries sustained during the course of events.</p>
-
-  <hr>
-
-  <h3>Anti-Harassment Statement</h3>
-  <p>No form of harassment or assault will be tolerated. This includes: physical, written, or verbal threats; unwelcome attention; stalking; pushing, shoving, or use of physical force; behavior that creates a disturbance or is dangerous, including lewd or generally offensive behavior or language; using sexually explicit or offensive language or conduct; excessive profanity; obscene gestures; use of racial, religious, sexual, gender, ability, or ethnic slurs. Those who violate this policy will be ejected from events without refund. Depending on the severity of the violation, we may choose to report transgressors to the authorities.</p>
-
-  <hr>
-
-  <h3>Reporting violations</h3>
-  <p>If you feel unsafe or uncomfortable, please talk with an organizer or volunteer. If you see someone being treated with disrespect, please speak up either yourself or by getting an organizer/volunteer involved.</p>
-  <p>When reporting a violation, we request that you share whatever details can be provided. We'll treat reports as anonymous submissions upon request and do our best to work with everyone in private to resolve the conflict. Concerns or violation reports can be privately submitted through <a href="#" target="_blank">this short form.</a></p>
-
+  {% assign companies = site.companies %}
+    {% for company in companies %}
+      {{ company.title }}
+    {% endfor %}
 </div>
