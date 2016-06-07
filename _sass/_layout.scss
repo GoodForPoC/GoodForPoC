@@ -332,13 +332,11 @@ $susy: (
 // ======================================================
 
   .company-header {
-    @include container(6);
+    @include breakpoint($medium){ @include container(6); }
     ul { margin: 10px 0; padding: 0; list-style: none; font-family: $sans-serif; }
     .company-logo {
       width: 100%;
-      @include breakpoint($medium){
-        @include span(first 1 of 6);
-      }
+      @include breakpoint($medium){ @include span(first 1 of 6); }
     }
     .company-info {
       @include breakpoint($medium){ @include span(2 of 6); }
@@ -360,10 +358,19 @@ $susy: (
   }
 
   .company-results {
+    @include breakpoint($medium){ @include container(6); }
     font-family: $sans-serif;
     font-size: 18px;
     .company-results_benefits {
-      @include breakpoint($medium){  }
+      @include breakpoint($medium){ @include span(first 2 of 6); }
+    }
+
+    .company-results_happiness {
+      @include breakpoint($medium){ @include span(last 4 of 6); }
+    }
+
+    .company-results_nextsteps {
+      @include breakpoint($medium){ @include span(6 of 6); }
     }
 
     h2 {
