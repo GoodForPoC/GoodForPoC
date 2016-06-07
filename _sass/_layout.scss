@@ -381,6 +381,7 @@ $susy: (
 
     .company-results_nextsteps {
       @include breakpoint($medium){ @include span(6 of 6); }
+      margin-bottom: 30px;
     }
 
     h2 {
