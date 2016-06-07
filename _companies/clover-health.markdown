@@ -9,7 +9,7 @@ categories:
   - "Health"
 location: "San Francisco, CA"
 size: Small (50-200)
-website: www.cloverhealth.com
+website: <a href="http://www.cloverhealth.com" target="_blank">www.cloverhealth.com</a>
 description: "Clover is a new health insurance company building a team of people committed to using technology in an impactful, measurable way."
 
 ---
@@ -40,9 +40,7 @@ description: "Clover is a new health insurance company building a team of people
   <p>“We have a diversity and inclusiveness group that meets weekly to discuss the current state and what we can do to improve. We want to bring outside speakers and consultants, make sure our hiring process is fair, improve diversity in our applicants, etc.”</p>
 </div>
 
-<div class="company-results_donation">
-  <!-- Dynamically insert via JS please -->
-</div>
+<!-- <div class="company-results_donation"></div> -->
 
 ## How you can join
 

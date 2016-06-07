@@ -1,38 +1,40 @@
 ---
 layout: company
-title:  "Nava"
+header_type: full
+image: /images/comp-logo-nava-pbc.jpg
+title:  "Nava PBC"
 date:   2016-04-17 14:51:28 -0700
 rating: 5
 categories:
   - "Software"
 location: "Washington, DC"
 size: Tiny (Under 50)
-website: www.navahq.com
+website: <a href="http://www.navahq.com" target="_blank">www.navahq.com</a>
 description: "Create software that radically improves how our government serves people."
 
 ---
 
 ## Key details
 
-<div class="benefits-and-perks">
-  ### Benefits & Perks
-  - Good salary
-  - Paid vacation
-  - 15 or more days of paid vacation
-  - Paid sick leave
-  - Unlimited sick leave
-
+<div class="company-results_benefits">
+  <h3>Benefits &amp; Perks</h3>
+  <li>Good salary</li>
+  <li>15 or more days of paid vacatioy</li>
+  <li>Paid sick leavy</li>
+  <li>Unlimited sick leavy</li>
 </div>
 
-<div class="ensure-happiness">
-  ### How does this company ensure that employees of color are happy?
+<div class="company-results_happiness">
+  <h3>How does this company ensure that employees of color are happy?</h3>
 
-  "Helping everyone feel ownership of the company and its mission and being proactively inclusive and positive to everyone here, making everyone's lives more pleasant."
+  <p>“Helping everyone feel ownership of the company and its mission and being proactively inclusive and positive to everyone here, making everyone's lives more pleasant.”</p>
 </div>
 
-### What next steps are being taken by this company to make it more diverse and inclusive?
+<div class="company-results_nextsteps">
+  <h3>What next steps are being taken by this company to make it more diverse and inclusive?</h3>
 
-  "Hire more diverse employees."
+  <p>“Hire more diverse employees.”</p>
+</div>
 
 <div class="donation-placeholder">
   <!-- Dynamically insert via JS please -->
@@ -40,8 +42,12 @@ description: "Create software that radically improves how our government serves 
 
 ## How you can join
 
-### What was the hiring process like?
-  "Very hands on with an emphasis on culture and mission as well as strong skills and experience."
+<div class="company-results_hiringprocess">
+  <h3>What was the hiring process like?</h3>
+  <p>“Very hands on with an emphasis on culture and mission as well as strong skills and experience.”</p>
+</div>
 
-### How you can apply
-  Apply to a listing on the website or connect with a team member on LinkedIn.
+<div class="company-results_apply">
+  <h3>How you can apply</h3>
+  <p> Apply to a listing on the website or connect with a team member on LinkedIn.</p>
+</div>
