@@ -339,7 +339,7 @@ $susy: (
       margin: 0rem auto;
       display: block;
 
-      @include breakpoint($medium){ @include span(first 1 of 6); }
+      @include breakpoint($medium){ @include span(first 1 of 6); margin-bottom: 0px; }
     }
     .company-info {
       text-align: center;
@@ -359,7 +359,10 @@ $susy: (
       .company-info_items { margin-top: 15px; li { margin: 5px 0; } }
     }
     .company-info_description {
-      @include breakpoint($medium){ @include span(last 3 of 6); }
+      @include breakpoint($medium){
+        @include span(last 3 of 6);
+        margin: 0;
+      }
       margin: 45px 0 35px;
     }
   }
