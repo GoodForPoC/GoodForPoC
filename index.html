@@ -1,29 +1,24 @@
 ---
 layout: default
-header_class: mini
-footer_class: 
+header_type: full
 ---
-
-
-<div class="coming-soon">
-  <div class="coming-soon--wrapper">
-    <h2 class="coming-soon--logo">GOOD FOR POC</h2>
-    <h1 class="coming-soon--title">Launching in June 2016</h1>
-    <p>
-      Good for PoC is a growing list of companies providing
-      inclusive and safe work environments for people of color
-      in tech.
-    </p>
-    <p>
-      Join the list to be notified of the launch.
-    </p>
-    <form class="coming-soon--form" action="//tech.us13.list-manage.com/subscribe/post?u=8e2732891d0fbdf463fc9ed33&amp;id=2890598a44" method="post" target="_blank" novalidate>
-      <input type="email" value="" name="EMAIL" placeholder="Your email address" />
-      <input type="submit" value="SIGN UP" />
-    </form>
-
-  <p class="coming-soon--img-credit">
-    <a href="http://www.wocintechchat.com/" target="_blank">Photo from WOCinTechChat</a>
-  </p>
-  </div>
+<div class="home-header">
+  <h1 class="home-header_intro">A growing list of companies providing an inclusive and safe work environment for people of color in tech.</h1>
+  <a class="home-header_learn" href="/why" target="_blank">Learn more</a>
+</div>
+<div class="page-body home">
+<div class="companies">
+  {% assign companies = site.companies %}
+    {% for company in companies %}
+      <div class="company-single">
+      <img class="company-logo" src="{{ company.image }}" alt="{{ company.title }}">
+      <h3 class="company-info_title">{{ company.title }}</h3>
+      <p class="company-info_description">{{ company.description | truncatewords: 15 }}</p>
+      <div class="company-info_footer">
+        <ul class="company-info_category">{% for category in company.categories %}<li>{{category}}{% unless forloop.last %}, {% endunless %}</li> {% endfor %}</ul>
+        <a href="{{company.url}}">Read more</a>
+      </div>
+      </div>
+    {% endfor %}
+</div>
 </div>
