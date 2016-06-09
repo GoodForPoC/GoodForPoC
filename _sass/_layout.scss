@@ -160,13 +160,12 @@ $susy: (
         a {
           color: $black;
           text-decoration: none;
-          padding: 8px;
+          padding: 3px 8px;
           transition: all 0.3s;
-          border-radius: 4px;
+          border-radius: none;
 
           &:hover, &.active {
-            color: $white;
-            background-color: $brown;
+            background-color: #d9c09d;
           }
         }
       }
@@ -605,7 +604,7 @@ $susy: (
       margin-left: 10px;
       padding: 10px;
       display: inline-block;
-      border-radius: 5px;
+      border-radius: none;
       background: rgba(184, 139, 74, 0.5);
       text-decoration: none;
     }
