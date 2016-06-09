@@ -69,6 +69,7 @@ $susy: (
 
 
   a { color: $darkbrown; text-decoration: underline; }
+  img { max-width: 100%; }
 
   hr {
     margin: 50px 0;
@@ -346,6 +347,9 @@ $susy: (
     @include breakpoint($large){ @include container(960px); }
 
     &>p { font-size: 1.25rem; } // 20px
+    & > ul {
+    font-family: $sans-serif; font-size: 1.25rem;
+    }
   }
 
   .wf-loading {
