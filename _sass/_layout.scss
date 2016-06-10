@@ -187,7 +187,7 @@ $susy: (
     max-width: 300px;
     border: 1px solid #E8E8E8;
     padding: 15px 20px;
-    margin-bottom: 30px;
+    margin-top: 30px;
     @include breakpoint($medium){
         @include gallery(6 of 12); // 2 columns of items
     }
@@ -204,8 +204,19 @@ $susy: (
       text-decoration: none;
     }
 
-    .company-logo { max-width: 100%; }
-    .company-info_title { font-size: 21px; text-align: center; }
+    .company-logo {
+      max-width: 100%;
+    }
+
+    .company-info_title {
+      font-size: 21px;
+      text-align: center;
+      margin: .5em 0;
+    }
+
+    .company-info_description {
+      margin-top: 0;
+    }
 
     .company-info_footer {
       overflow: auto;
@@ -235,8 +246,6 @@ $susy: (
         text-decoration: underline;
       }
     }
-
-
   }
 
 
@@ -603,7 +612,7 @@ $susy: (
 // ======================================================
   .site-footer {
     height: 100%;
-    margin-top: 75px; //please uncomment when we go live
+    margin-top: 50px;
     padding: 20px 60px;
     background: url('../images/g4poc-texture.png');
     font-family: $sans-serif;
