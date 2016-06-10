@@ -49,10 +49,7 @@ description: "One of the largest global organizations for young people and socia
   <p>“The company also just instituted an annual staff happiness survey that has a specific section on diversity and inclusion. This will allow the company to evaluate how they are doing in these areas and highlight places where they can do better.”</p>
 </div>
 
-
-<div class="donation-placeholder">
-  <!-- Dynamically insert via JS please -->
-</div>
+{% include donation-company.html %}
 
 ## How you can join
 

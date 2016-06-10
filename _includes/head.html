@@ -16,6 +16,7 @@
   <!-- Open graph -->
   <meta property="og:url" content="{{ page.url | prepend: site.url}}"/>
   <meta property="og:site_name" content="{{ site.title }}"/>
+  {% if page.title %}<meta property="og:title" content="{{ page.title }}"/>{% endif %}
   <meta property="og:description" content="{{ site.long_description }}"/>
   <meta property="og:image" content="{{"/open-graph-icon.png" | prepend: site.baseurl | prepend: site.url}}"/>
 

@@ -33,9 +33,7 @@ description: "True Link provides financial tools for families and professionals 
   <p>“Training, commitment to the Kapor Capital diversity commitment, founder advocacy.”</p>
 </div>
 
-<div class="donation-placeholder">
-  <!-- Dynamically insert via JS please -->
-</div>
+{% include donation-company.html %}
 
 ## How you can join
 

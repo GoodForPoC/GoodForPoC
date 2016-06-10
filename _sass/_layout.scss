@@ -309,8 +309,7 @@ $susy: (
           font-family: $sans-serif;
           color: #878787;
           &:focus {
-            $outline: 1px dotted $gray;
-            color: $darkbrown;
+            outline: 1px dotted $gray;
           }
         }
 
@@ -375,6 +374,20 @@ $susy: (
     visibility: hidden;
   }
 
+  .button-cta {
+    padding: 15px 30px;
+    border-radius: 5px;
+    box-shadow: 0 3px 0 0 $brown;
+    background-color: $lightbrown;
+    font-family: $sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.0125rem;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    color: $white;
+  }
 
 // ======================================================
 // HOME STYLING
@@ -402,18 +415,6 @@ $susy: (
       display: block;
       width: 180px;
       margin: 0 auto;
-      padding: 15px 30px;
-      border-radius: 5px;
-      box-shadow: 0 3px 0 0 $brown;
-      background-color: $lightbrown;
-      font-family: $sans-serif;
-      font-size: 18px;
-      font-weight: 500;
-      letter-spacing: 0.0125rem;
-      text-decoration: none;
-      text-align: center;
-      text-transform: uppercase;
-      color: $white;
     }
   }
 
@@ -494,6 +495,73 @@ $susy: (
     h3 { margin: 35px 0 20px 0; font-family: $serif; font-size: 24px; }
     div>p { font-size: 18px; }
 
+  .company-results_donation {
+      clear: both;
+      background: url('../images/g4poc-texture.png') $tan;
+      padding: 20px;
+      position: relative;
+      color: $darkbrown;
+
+      @include breakpoint($medium){
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+      // display: none;
+
+      h3 {
+        @include breakpoint($medium){ @include span(first 6 of 6); }
+        margin: 0 0 .5em;
+      }
+    }
+
+    .company-results_donation-blurb {
+      @include breakpoint($medium){ @include span(first 4 of 6); }
+
+      > p {
+        margin: 0;
+      }
+    }
+
+    .company-results_donation-button {
+      @include breakpoint($medium){
+        @include span(last 2 of 6);
+        text-align: right;
+      }
+
+      @include breakpoint($small){ text-align: center; }
+
+      .button-cta {
+          @include breakpoint($small){ margin-top: .5em; }
+          display: block;
+      }
+    }
+
+    .company-results_donation-close {
+      -webkit-appearance: none;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: $darktan;
+      padding: 2px 6px;
+      border: none;
+      color: $white;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $tan;
+        color: $darktan;
+      }
+
+      &:focus {
+        outline: 1px dotted $gray;
+        color: $darkbrown;
+      }
+    }
+
+    .company-results_donation-hidden {
+      display: none;
+    }
   }
 
 

@@ -42,9 +42,7 @@ description: "Dev Bootcamp pioneered the short-term immersive “web development
 </div>
 
 
-<div class="donation-placeholder">
-  <!-- Dynamically insert via JS please -->
-</div>
+{% include donation-company.html %}
 
 ## How you can join
 
