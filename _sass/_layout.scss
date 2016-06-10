@@ -163,7 +163,7 @@ $susy: (
           text-decoration: none;
           padding: 3px 8px;
           transition: all 0.3s;
-          border-radius: none;
+          border-radius: 0;
 
           &:hover, &.active {
             background-color: #d9c09d;
@@ -171,7 +171,7 @@ $susy: (
         }
       }
 
-      &[data-current^="/why"] li a[href^="/why"] {
+      &[data-current^="/about"] li a[href^="/about"] {
         @extend a.active;
       }
     }
@@ -193,6 +193,15 @@ $susy: (
     }
     @include breakpoint($large){
         @include gallery(4 of 12); // 3 columns of items
+    }
+
+    &:hover {
+      border-color: $gray;
+    }
+
+    a {
+      display: block;
+      text-decoration: none;
     }
 
     .company-logo { max-width: 100%; }
@@ -217,12 +226,13 @@ $susy: (
         }
       }
 
-      &>a {
+      .company-info_read-more {
         float: right;
         font-family: $sans-serif;
         font-size: 13px;
         font-weight: 600;
         text-transform: uppercase;
+        text-decoration: underline;
       }
     }
 
@@ -608,7 +618,7 @@ $susy: (
       margin-left: 10px;
       padding: 10px;
       display: inline-block;
-      border-radius: none;
+      border-radius: 0;
       background: rgba(184, 139, 74, 0.5);
       text-decoration: none;
     }
