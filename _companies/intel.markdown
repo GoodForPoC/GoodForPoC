@@ -40,10 +40,7 @@ description: "You may know us for our processors. But we do so much more. Throug
   <p>“Lots of recruiting events and investment in career development, mentoring, and retention. They understand that the retention and promotion of people of color is necessary if they want to move the needle.”</p>
 </div>
 
-
-<div class="donation-placeholder">
-  <!-- Dynamically insert via JS please -->
-</div>
+{% include donation-company.html %}
 
 ## How you can join
 

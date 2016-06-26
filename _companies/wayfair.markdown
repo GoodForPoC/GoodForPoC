@@ -35,9 +35,7 @@ description: "Wayfair is one of the world's largest online destinations for the 
   <p>“Recently started program for Women in the workplace, many POC and women leaders in the company.”</p>
 </div>
 
-<div class="donation-placeholder">
-  <!-- Dynamically insert via JS please -->
-</div>
+{% include donation-company.html %}
 
 ## How you can join
 

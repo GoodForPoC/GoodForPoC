@@ -36,9 +36,7 @@ description: "Create software that radically improves how our government serves 
   <p>“Hire more diverse employees.”</p>
 </div>
 
-<div class="donation-placeholder">
-  <!-- Dynamically insert via JS please -->
-</div>
+{% include donation-company.html %}
 
 ## How you can join
 

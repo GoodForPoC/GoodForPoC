@@ -69,6 +69,7 @@ $susy: (
 
 
   a { color: $darkbrown; text-decoration: underline; }
+  img { max-width: 100%; }
 
   hr {
     margin: 50px 0;
@@ -160,18 +161,17 @@ $susy: (
         a {
           color: $black;
           text-decoration: none;
-          padding: 8px;
+          padding: 3px 8px;
           transition: all 0.3s;
-          border-radius: 4px;
+          border-radius: 0;
 
           &:hover, &.active {
-            color: $white;
-            background-color: $brown;
+            background-color: #d9c09d;
           }
         }
       }
 
-      &[data-current^="/why"] li a[href^="/why"] {
+      &[data-current^="/about"] li a[href^="/about"] {
         @extend a.active;
       }
     }
@@ -187,7 +187,7 @@ $susy: (
     max-width: 300px;
     border: 1px solid #E8E8E8;
     padding: 15px 20px;
-    margin-bottom: 30px;
+    margin-top: 30px;
     @include breakpoint($medium){
         @include gallery(6 of 12); // 2 columns of items
     }
@@ -195,8 +195,28 @@ $susy: (
         @include gallery(4 of 12); // 3 columns of items
     }
 
-    .company-logo { max-width: 100%; }
-    .company-info_title { font-size: 21px; text-align: center; }
+    &:hover {
+      border-color: $gray;
+    }
+
+    a {
+      display: block;
+      text-decoration: none;
+    }
+
+    .company-logo {
+      max-width: 100%;
+    }
+
+    .company-info_title {
+      font-size: 21px;
+      text-align: center;
+      margin: .5em 0;
+    }
+
+    .company-info_description {
+      margin-top: 0;
+    }
 
     .company-info_footer {
       overflow: auto;
@@ -217,16 +237,15 @@ $susy: (
         }
       }
 
-      &>a {
+      .company-info_read-more {
         float: right;
         font-family: $sans-serif;
         font-size: 13px;
         font-weight: 600;
         text-transform: uppercase;
+        text-decoration: underline;
       }
     }
-
-
   }
 
 
@@ -290,8 +309,7 @@ $susy: (
           font-family: $sans-serif;
           color: #878787;
           &:focus {
-            $outline: 1px dotted $gray;
-            color: $darkbrown;
+            outline: 1px dotted $gray;
           }
         }
 
@@ -347,9 +365,29 @@ $susy: (
     @include breakpoint($large){ @include container(960px); }
 
     &>p { font-size: 1.25rem; } // 20px
+    & > ul {
+    font-family: $sans-serif; font-size: 1.25rem;
+    }
   }
 
+  .wf-loading {
+    visibility: hidden;
+  }
 
+  .button-cta {
+    padding: 15px 30px;
+    border-radius: 5px;
+    box-shadow: 0 3px 0 0 $brown;
+    background-color: $lightbrown;
+    font-family: $sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.0125rem;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    color: $white;
+  }
 
 // ======================================================
 // HOME STYLING
@@ -377,18 +415,6 @@ $susy: (
       display: block;
       width: 180px;
       margin: 0 auto;
-      padding: 15px 30px;
-      border-radius: 5px;
-      box-shadow: 0 3px 0 0 $brown;
-      background-color: $lightbrown;
-      font-family: $sans-serif;
-      font-size: 18px;
-      font-weight: 500;
-      letter-spacing: 0.0125rem;
-      text-decoration: none;
-      text-align: center;
-      text-transform: uppercase;
-      color: $white;
     }
   }
 
@@ -469,6 +495,73 @@ $susy: (
     h3 { margin: 35px 0 20px 0; font-family: $serif; font-size: 24px; }
     div>p { font-size: 18px; }
 
+  .company-results_donation {
+      clear: both;
+      background: url('../images/g4poc-texture.png') $tan;
+      padding: 20px;
+      position: relative;
+      color: $darkbrown;
+
+      @include breakpoint($medium){
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+      // display: none;
+
+      h3 {
+        @include breakpoint($medium){ @include span(first 6 of 6); }
+        margin: 0 0 .5em;
+      }
+    }
+
+    .company-results_donation-blurb {
+      @include breakpoint($medium){ @include span(first 4 of 6); }
+
+      > p {
+        margin: 0;
+      }
+    }
+
+    .company-results_donation-button {
+      @include breakpoint($medium){
+        @include span(last 2 of 6);
+        text-align: right;
+      }
+
+      @include breakpoint($small){ text-align: center; }
+
+      .button-cta {
+          @include breakpoint($small){ margin-top: .5em; }
+          display: block;
+      }
+    }
+
+    .company-results_donation-close {
+      -webkit-appearance: none;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: $darktan;
+      padding: 2px 6px;
+      border: none;
+      color: $white;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $tan;
+        color: $darktan;
+      }
+
+      &:focus {
+        outline: 1px dotted $gray;
+        color: $darkbrown;
+      }
+    }
+
+    .company-results_donation-hidden {
+      display: none;
+    }
   }
 
 
@@ -587,7 +680,7 @@ $susy: (
 // ======================================================
   .site-footer {
     height: 100%;
-    margin-top: 75px; //please uncomment when we go live
+    margin-top: 50px;
     padding: 20px 60px;
     background: url('../images/g4poc-texture.png');
     font-family: $sans-serif;
@@ -602,7 +695,7 @@ $susy: (
       margin-left: 10px;
       padding: 10px;
       display: inline-block;
-      border-radius: 5px;
+      border-radius: 0;
       background: rgba(184, 139, 74, 0.5);
       text-decoration: none;
     }

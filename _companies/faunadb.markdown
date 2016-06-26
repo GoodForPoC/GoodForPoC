@@ -41,9 +41,7 @@ description: "After building the databases that power Twitter, we regrouped to c
   <p>“The CEO came from Twitter and is very aware and focused on diversity due to such a lack of it during his time there. He doesn't want to be yet another startup with a bunch of white dudes. Focus is on bringing in more female engineers, as well as non-white employees altogether. So far the team is made of Brazilian, Hungarian, Indian, Pakistani, and White. Due to the cultural diversity already present, we have team movie nights where we watch foreign films, and try different foods on "team lunch" days. We even swap recipes. The folks here are smart and informed, well read, and are great to chat with about any topic, really. It was surprising how much they knew about my own culture, which helped me feel at home with this bunch fairly quickly. The number one thing that matters here is whether or not you can do the job well. If you need help, you'll get it, but at no point have I or anyone else I know who is non-white has felt "different" due to ethnic or cultural background.”</p>
 </div>
 
-<div class="donation-placeholder">
-  <!-- Dynamically insert via JS please -->
-</div>
+{% include donation-company.html %}
 
 ## How you can join
 

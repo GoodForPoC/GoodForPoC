@@ -41,7 +41,7 @@ answer questions for those working at the company.”</p>
   <p><em>No answer given.</em></p>
 </div>
 
-<!-- <div class="company-results_donation"></div> -->
+{% include donation-company.html %}
 
 ## How you can join
 

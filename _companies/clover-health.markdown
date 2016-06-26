@@ -40,7 +40,7 @@ description: "Clover is a new health insurance company building a team of people
   <p>“We have a diversity and inclusiveness group that meets weekly to discuss the current state and what we can do to improve. We want to bring outside speakers and consultants, make sure our hiring process is fair, improve diversity in our applicants, etc.”</p>
 </div>
 
-<!-- <div class="company-results_donation"></div> -->
+{% include donation-company.html %}
 
 ## How you can join
 

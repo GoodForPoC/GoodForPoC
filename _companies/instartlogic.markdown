@@ -40,9 +40,7 @@ description: "At Instart Logic we recognize that every second counts. We strive 
   <p>“Ensuring recruitment from more diverse sources so our pipeline is diverse so we have more diverse staff to include.”</p>
 </div>
 
-<div class="donation-placeholder">
-  <!-- Dynamically insert via JS please -->
-</div>
+{% include donation-company.html %}
 
 ## How you can join
 
