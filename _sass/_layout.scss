@@ -361,7 +361,7 @@ $susy: (
 
   .page-body {
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 20vh;
     @include container($site-container);
     @include breakpoint($large){ @include container(960px); }
 
