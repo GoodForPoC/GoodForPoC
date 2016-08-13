@@ -349,7 +349,7 @@ $susy: (
   .coming-soon--img-credit a {
     font-family: $sans-serif;
     font-size: 0.875rem; // 14px
-    color: #CBCBCB;
+    color: #cbcbcb;
   }
 }
 
@@ -687,18 +687,33 @@ $susy: (
     font-family: $sans-serif;
     color: $darkbrown;
     text-align: center;
-    @include breakpoint($medium){ height: 70px; padding: 5px 0; }
+    @include breakpoint($medium){ padding: 5px 0 20px; }
 
     p { display: inline-block; margin: 0; }
 
     &>a {
-      margin-top: 10px;
+      margin-top: 20px;
       margin-left: 10px;
       padding: 10px;
       display: inline-block;
       border-radius: 0;
       background: rgba(184, 139, 74, 0.5);
       text-decoration: none;
+      @include breakpoint($medium){ margin-top: 0; }
+    }
+
+    .site-social {
+      display: block;
+      margin: 20px 0 0;
+      padding: 0;
+      list-style: none;
+
+      li {
+        display: inline-block;
+        font-size: 20px;
+        & + li { margin-left: 20px; }
+        a { text-decoration: none; }
+      }
     }
 
   }
