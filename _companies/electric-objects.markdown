@@ -9,7 +9,7 @@ categories:
   - "Hardware"
 location: "New York, NY"
 size: Tiny (Under 50)
-website: <a href="www.electricobjects.com" target="_blank">www.electricobjects.com</a>
+website: <a href="http://www.electricobjects.com" target="_blank">www.electricobjects.com</a>
 description: "Electric Objects is a digital art platform. Our mission is to put digital art on a wall in every home."
 
 ---
