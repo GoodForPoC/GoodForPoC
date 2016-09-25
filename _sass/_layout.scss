@@ -153,12 +153,16 @@ $susy: (
       @include breakpoint($medium){ float: right; padding: 8px 0; }
 
       li {
-        display: inline-block;
+        display: block;
         font-family: $sans-serif;
         font-size: 1rem;
         text-transform: uppercase;
-        &+li { margin-left: 10px; }
+        @include breakpoint($medium){
+          display: inline-block;
+          &+li { margin-left: 10px; }
+        }
         a {
+          display: block;
           color: $black;
           text-decoration: none;
           padding: 3px 8px;

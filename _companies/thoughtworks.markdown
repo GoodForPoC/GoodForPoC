@@ -6,7 +6,7 @@ title:  "Thoughtworks"
 date:   2016-04-17 14:51:28 -0700
 rating: 4
 categories:
-  - "Software"
+  - "Agency / Consulting"
 location: "Recife, Pernambuco, Brasil"
 size: Very Large (1,000-10,000)
 website: <a href="http://www.thoughtworks.com" target="_blank">www.thoughtworks.com</a>

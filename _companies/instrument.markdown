@@ -9,7 +9,7 @@ categories:
   - "Agency / Consulting"
 location: "Portland, OR"
 size: Small (50-200)
-website: <a href="http://www.19ideas.com" target="_blank">www.19ideas.com</a>
+website: <a href="http://www.instrument.com/" target="_blank">www.instrument.com/</a>
 description: "Instrument is an independent digital creative agency in Portland, Oregon. We build digital brands, experiences and campaigns for every screen."
 
 ---
