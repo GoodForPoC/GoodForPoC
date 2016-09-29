@@ -3,7 +3,7 @@ layout: company
 header_type: full
 image: /images/comp-logo-pandora.jpg
 title:  "Pandora Media"
-date:   2016-09-29 15:37:22 -0700
+date:   2016-04-17 14:51:28 -0700
 rating: 4
 categories:
   - "Music"
