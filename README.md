@@ -1,10 +1,10 @@
 # Good for PoC
 
-Good for PoC is creating a list of inclusive companies for people of color in tech. It was founded by Amélie Lamont, Catt Small and Jacky Alciné. After running for 2 years by ourselves, we realized we needed help. This project is now open source. Please [view the roadmap](http://...) to understand what kinds of contributions we are looking for.
+Good for PoC is creating a list of inclusive companies for people of color in tech. It was founded by Amélie Lamont, Catt Small and Jacky Alciné. After running for 2 years by ourselves, we realized we needed help. This project is now open source. Please [view the roadmap](https://github.com/GoodForPoC/website/projects/1) to understand what kinds of contributions we are looking for.
 
 [![Gem Version](https://badge.fury.io/rb/jekyll.svg)](https://badge.fury.io/rb/jekyll)
 
-[Chat with project developers on Gitter](https://gitter.im/GoodForPoC/Lobby?utm_source=share-link&utm_medium=link&utm_campaign=share-link) – [view our code of conduct](http://...) – [support hosting fees for this project on Patreon](https://www.patreon.com/goodforpoc)
+[Chat with project developers on Gitter](https://gitter.im/GoodForPoC/Lobby?utm_source=share-link&utm_medium=link&utm_campaign=share-link) – [view our code of conduct](https://github.com/GoodForPoC/website/blob/gh-pages/docs/CODE_OF_CONDUCT.md) – [support hosting fees for this project on Patreon](https://www.patreon.com/goodforpoc)
 
 ## Installation
 - Open the command line editor or git graphical user interface (GUI) of your choosing.
@@ -26,11 +26,11 @@ Read guidelines in our documentation about contributing.
 - Once approved, your pull request will be approved and deployed.
 
 ## Contributors
-[See list of contributors](http://...)
+[See list of contributors](https://github.com/GoodForPoC/website/graphs/contributors)
 This project is maintained by Amélie Lamont, Catt Small and Jacky Alciné, the founders of Good for People of Color Inc.
 
 ## License
-This project is open sourced under the [MIT License](http://...).
+This project is open sourced under the [Unilicense](https://github.com/GoodForPoC/website/blob/gh-pages/LICENSE).
 
 ## Support
 Feeling generous? You can help us cover the hosting fees for this project on [Patreon](https://www.patreon.com/goodforpoc).
