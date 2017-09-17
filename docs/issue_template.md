@@ -1,4 +1,4 @@
-## Expected behavior
+## Feature idea / Expected behavior
 
 Provide details regarding what should happen.
 
@@ -12,12 +12,18 @@ If this issue is a bug, tag it as a bug and write what actually happens here. If
 - B
 - C
 
-### Specifications
+### Relevant specifications
 
-- Device: 
-- Operating system:
-- Browser: 
+- Device I was using: 
+- Operating system I was using: 
+- Browser I was using: 
 
 ## Screenshots
 
 If applicable, upload screenshots here.
+
+## Reviewers
+
+@GoodForPoC/owners @GoodForPoC/moderators
+
+cc additional reviewers: @username @username
