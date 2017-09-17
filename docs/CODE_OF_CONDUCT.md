@@ -30,7 +30,7 @@ The following behaviors are expected and requested of all community members:
 
 No form of harassment or assault will be tolerated. This includes: physical, written, or verbal threats; unwelcome attention; stalking; pushing, shoving, or use of physical force; behavior that creates a disturbance or is dangerous, including lewd or generally offensive behavior or language; using sexually explicit or offensive language or conduct; excessive profanity; obscene gestures; use of racial, religious, sexual, gender, ability, or ethnic slurs.
 
-Unacceptable behavior from any community member, including sponsors and those with decision-making authority, will not be tolerated. Anyone asked to stop unacceptable behavior is expected to comply immediately. Those who do not comply will be swlftly ejected from events and online community spaces such as forums, chatrooms, and Github project repositories. Depending on the severity of the violation, we may choose to report transgressors to the authorities.
+Unacceptable behavior from any community member, including sponsors and those with decision-making authority, will not be tolerated. Anyone asked to stop unacceptable behavior is expected to comply immediately. Those who do not comply will be swiftly ejected from events and online community spaces such as forums, chatrooms, and Github project repositories. Depending on the severity of the violation, we may choose to report transgressors to the authorities.
 
 ## Reporting violations
 
@@ -41,6 +41,6 @@ Concerns or violation reports can be privately submitted [email us](mailto:hello
 
 We expect all community participants (contributors, paid or otherwise; sponsors; and other guests) to abide by this Code of Conduct in all community venues–online and in-person–as well as in all one-on-one communications pertaining to community business.
 
-This code of conduct and its related procedures also applies to unacceptable behavior occuring outside the scope of community activities when such behavior has the potential to adversely affect the safety and well-being of community members.
+This code of conduct and its related procedures also applies to unacceptable behavior occurring outside the scope of community activities when such behavior has the potential to adversely affect the safety and well-being of community members.
 
 *This code of conduct was partially derived from the [Citizen Code of Conduct](http://citizencodeofconduct.org/).*
