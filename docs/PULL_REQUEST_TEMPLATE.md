@@ -2,7 +2,9 @@
 [Enter description here]
 
 ## Context
+
 Related to roadmap item(s):
+
 - A
 - B
 - C
@@ -25,5 +27,7 @@ After:
 [] C
 
 ## Reviewers
-@repo-admins
+
+@GoodForPoC/owners @GoodForPoC/moderators
+
 cc additional reviewers: @username @username
