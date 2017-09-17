@@ -33,4 +33,4 @@ This project is maintained by Amélie Lamont, Catt Small and Jacky Alciné, the 
 This project is open sourced under the [MIT License](http://...).
 
 ## Support
-Feeling generous? You can help us cover the hosting fees for this project on Patreon](https://www.patreon.com/goodforpoc).
+Feeling generous? You can help us cover the hosting fees for this project on [Patreon](https://www.patreon.com/goodforpoc).
