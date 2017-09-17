@@ -1,12 +1,12 @@
 # Contributing to Good for PoC
 
-We’re so happy to have your help! Thank you. If you haven't already, [join us on Gitter](https://gitter.im/GoodForPoC/Lobby?utm_source=share-link&utm_medium=link&utm_campaign=share-link). We would love to have an active community of people contributing to this project! Remember to [view our code of conduct](https://github.com/GoodForPoC/website/blob/master/docs/CODE_OF_CONDUCT.md) before participating.
+We’re so happy to have your help! Thank you. If you haven't already, [join us on Gitter](https://gitter.im/GoodForPoC/Lobby?utm_source=share-link&utm_medium=link&utm_campaign=share-link). We would love to have an active community of people contributing to this project! Remember to [view our code of conduct](https://github.com/GoodForPoC/GoodForPoC/blob/master/docs/CODE_OF_CONDUCT.md) before participating.
 
 ## What we need help with
-Please [view the roadmap](https://github.com/GoodForPoC/website/projects/1) to see what contributions are needed and in progress before modifying code. We want this project to continue growing and help support people of color in tech around the globe! If your idea doesn't exist on the roadmap yet, open an issue using the [Issues](https://github.com/GoodForPoC/website/issues) tab. Make sure to describe the feature you would like to see, why you need it, and how it should work. Always tag your feature ideas with the `enhancements` tag.
+Please [view the roadmap](https://github.com/GoodForPoC/GoodForPoC/projects/1) to see what contributions are needed and in progress before modifying code. We want this project to continue growing and help support people of color in tech around the globe! If your idea doesn't exist on the roadmap yet, open an issue using the [Issues](https://github.com/GoodForPoC/GoodForPoC/issues) tab. Make sure to describe the feature you would like to see, why you need it, and how it should work. Always tag your feature ideas with the `enhancements` tag.
 
 ## Bugs
-You can report bugs using the [Issues](https://github.com/GoodForPoC/website/issues) tab. Please make sure your bug has yet to be reported before opening a new one. If you need to file a new bug, be sure to include a title and clear description, as much relevant information as possible, and a screenshot or code sample showing the bug. Always tag your bug reports with the `bug` tag. **If you find a security vulnerability, do NOT open an issue. [Email hello@goodforpocin.tech](mailto:hello@goodforpocin.tech?Subject=[Security%20vulnerability]%20description%20here) instead.**
+You can report bugs using the [Issues](https://github.com/GoodForPoC/GoodForPoC/issues) tab. Please make sure your bug has yet to be reported before opening a new one. If you need to file a new bug, be sure to include a title and clear description, as much relevant information as possible, and a screenshot or code sample showing the bug. Always tag your bug reports with the `bug` tag. **If you find a security vulnerability, do NOT open an issue. [Email hello@goodforpocin.tech](mailto:hello@goodforpocin.tech?Subject=[Security%20vulnerability]%20description%20here) instead.**
 
 In order to determine whether you are dealing with a security issue, ask yourself these two questions:
 
@@ -58,7 +58,7 @@ We strongly believe in test-driven development and would like help implementing 
 - Make sure you use a [linter](https://en.wikipedia.org/wiki/Lint_(software)) to fix any and all JavaScript and CSS errors.
 
 ## Submitting changes
-When you're ready to merge your changes into the master branch, open a [Pull Request](https://help.github.com/articles/creating-a-pull-request/) in the project via GitHub. Make sure it has a clear list of what you've done and screenshots – we've created a handy template to make the submission process as easy as possible. Please make sure your submissions follow our coding conventions (above).
+When you're ready to merge your changes into the master branch, open a [pull request](https://help.github.com/articles/creating-a-pull-request/) via [the project's pull request tab on GitHub](https://github.com/GoodForPoC/GoodForPoC/pulls). Make sure it has a clear list of what you've done and screenshots – we've created a handy template to make the submission process as easy as possible. Please make sure your submissions follow our coding conventions (above).
 
 Sometimes, reviewers will provide feedback on your project changes. Please include any feedback you receive from peers during the review process and update your pull request appropriately. Once approved, your pull request will be approved and deployed.
 
