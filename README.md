@@ -8,7 +8,7 @@ Good for PoC is creating a list of inclusive companies for people of color in te
 
 ## Installation
 - Open the command line editor or git graphical user interface (GUI) of your choosing.
-- Clone `git@github.com:GoodForPoc/… .git` to a folder on your computer.
+- Clone `git@github.com:GoodForPoc/website.git` to a folder on your computer.
 - Make sure [Ruby](https://www.ruby-lang.org/) is installed on your computer.
 - Type `gem install jekyll bundler` into your command line editor to install [Jekyll](https://jekyllrb.com/).
 - `cd` into the folder where you cloned the project.
@@ -16,7 +16,8 @@ Good for PoC is creating a list of inclusive companies for people of color in te
 - Browse to `http://localhost:4000` to see the site.
 
 ## Making changes
-Read guidelines in our documentation about contributing.
+Read the [basic contribution guidelines](https://github.com/GoodForPoC/website/blob/gh-pages/docs/CONTRIBUTING.md) before joining this project.
+
 - Once you’ve identified an area that needs help, create a new branch on your local copy of this repository. [Read more about branching in the git documentation](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging).
 - Make all of your changes in that branch.
 - Test your code and ensure that it aligns with the standards below.
@@ -27,10 +28,11 @@ Read guidelines in our documentation about contributing.
 
 ## Contributors
 [See list of contributors](https://github.com/GoodForPoC/website/graphs/contributors)
+
 This project is maintained by Amélie Lamont, Catt Small and Jacky Alciné, the founders of Good for People of Color Inc.
 
 ## License
 This project is open sourced under the [Unilicense](https://github.com/GoodForPoC/website/blob/gh-pages/LICENSE).
 
 ## Support
-Feeling generous? You can help us cover the hosting fees for this project on [Patreon](https://www.patreon.com/goodforpoc).
+Feeling generous? You can help us cover the hosting fees for this project on [Patreon].(https://www.patreon.com/goodforpoc).
