@@ -27,4 +27,4 @@ This project is maintained by [Amélie Lamont](https://github.com/almnt), [Catt 
 This project is open sourced under the [Unlicense](https://github.com/GoodForPoC/website/blob/master/LICENSE), a license with no conditions whatsoever that dedicates works to the public domain.
 
 ## Support
-Feeling generous? You can help us cover the hosting fees for this project on [Patreon].(https://www.patreon.com/goodforpoc).
+Feeling generous? You can help us cover the hosting fees for this project on [Patreon](https://www.patreon.com/goodforpoc).
