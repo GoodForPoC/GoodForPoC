@@ -9,14 +9,8 @@ Good for PoC is creating a list of inclusive companies for people of color in te
 ## Getting started
 - Open the command line editor or git graphical user interface (GUI) of your choosing.
 - Clone `git@github.com:GoodForPoc/GoodForPoC.git` to a folder on your computer.
-- Make sure [Ruby](https://www.ruby-lang.org/) is installed on your computer.
-- Type `gem install jekyll bundler` into your command line editor to install [Jekyll](https://jekyllrb.com/).
-- `cd` into the folder where you cloned the project.
-- Type `bundle exec jekyll serve` to run the website server.
-- Browse to `http://localhost:4000` to see the site.
 
-## Contributing
-Read the [contribution guidelines](https://github.com/GoodForPoC/GoodForPoC/blob/master/docs/CONTRIBUTING.md) to learn about helping with this project.
+Read the [contribution guidelines](https://github.com/GoodForPoC/GoodForPoC/blob/master/docs/CONTRIBUTING.md) to learn more about helping with this project.
 
 ## Contributors
 [See list of contributors](https://github.com/GoodForPoC/GoodForPoC/graphs/contributors)
