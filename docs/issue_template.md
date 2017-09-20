@@ -1,18 +1,22 @@
-## Feature idea / Expected behavior
+## Feature idea (if an idea) / Expected behavior (if a bug)
 
-Provide details regarding what should happen.
+Remove irrelevant text from the title and provide details regarding what should happen.
 
-## Actual behavior
+## Actual behavior (if a bug)
 
-If this issue is a bug, tag it as a bug and write what actually happens here. If it's not a bug, remove this section.
+If this issue is not a bug, remove this section. If this issue is a bug, tag it as a bug and write what actually happens here.
 
-### Steps to reproduce the problem
+### Steps to reproduce the problem (if a bug)
+
+If this issue is not a bug, remove this section. If it is a bug, remove this text.
 
 - A
 - B
 - C
 
-### Relevant specifications
+### Relevant specifications (if a bug)
+
+If this issue is not a bug, remove this section. If it is a bug, remove this text.
 
 - Device I was using: 
 - Operating system I was using: 
@@ -24,6 +28,6 @@ If applicable, upload screenshots here.
 
 ## Reviewers
 
-@GoodForPoC/owners @GoodForPoC/moderators
+@GoodForPoC/owners
 
 cc additional reviewers: @username @username
