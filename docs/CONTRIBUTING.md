@@ -16,11 +16,11 @@ In order to determine whether you are dealing with a security issue, ask yoursel
 If the answer to either of those two questions are "yes", then you're probably dealing with a security issue. Note that even if you answer "no" to both questions, you may still be dealing with a security issue, so if you're unsure, just [email us at hello@goodforpocin.tech](mailto:hello@goodforpocin.tech?Subject=[Security%20vulnerability]%20description%20here).
 
 ## How to create your changes
-- Once you’ve identified an area that needs help, make a new branch on your local copy of this repository. [Read more about branching in the git documentation](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging).
-- Make all of your changes in that branch.
-- Use `ember build` (development) or `ember build --environment production` (production) to see builds of your code.
-- Test your code and ensure that it aligns with the standards below.
-- Commit the relevant changes and push your branch to the remote repository.
+1. Once you’ve identified an area that needs help, make a new branch on your local copy of this repository. [Read more about branching in the git documentation](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging).
+2. Make all of your changes in that branch.
+3. Use `ember build` (development) or `ember build --environment production` (production) to see builds of your code.
+4. Test your code and ensure that it aligns with the standards below.
+5. Commit the relevant changes and push your branch to the remote repository.
 
 ## Coding conventions
 - Please indent using two spaces (soft tabs).
@@ -70,10 +70,10 @@ Sometimes, reviewers will provide feedback on your project changes. Please inclu
 
 ## Further Reading / Useful Links
 
-* [ember.js](https://emberjs.com/)
-* [ember-cli](https://ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+- [ember.js](https://emberjs.com/)
+- [ember-cli](https://ember-cli.com/)
+- Development Browser Extensions
+  - [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
+  - [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
 
 ## Thank you!
