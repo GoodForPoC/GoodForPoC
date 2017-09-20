@@ -7,8 +7,21 @@ Good for PoC is creating a list of inclusive companies for people of color in te
 [Chat with project developers on Gitter](https://gitter.im/GoodForPoC/Lobby?utm_source=share-link&utm_medium=link&utm_campaign=share-link) – [view our code of conduct](https://github.com/GoodForPoC/GoodForPoC/blob/master/docs/CODE_OF_CONDUCT.md) – [support hosting fees for this project on Patreon](https://www.patreon.com/goodforpoc)
 
 ## Getting started
-- Open the command line editor or git graphical user interface (GUI) of your choosing.
-- Clone `git@github.com:GoodForPoc/GoodForPoC.git` to a folder on your computer.
+You will need the following things properly installed on your computer.
+
+* [Git](https://git-scm.com/)
+* [Node.js](https://nodejs.org/) (with NPM)
+* [Ember CLI](https://ember-cli.com/)
+* [Google Chrome](https://google.com/chrome/)
+
+Once you've installed the above...
+
+# Open the command line editor or git graphical user interface (GUI) of your choosing.
+# Clone `git@github.com:GoodForPoc/GoodForPoC.git` to a folder on your computer.
+# `cd` into the GoodForPoc folder using your command line editor.
+# Run `npm install`.
+# Run `ember serve`.
+# Visit the app at [http://localhost:4200](http://localhost:4200).
 
 Read the [contribution guidelines](https://github.com/GoodForPoC/GoodForPoC/blob/master/docs/CONTRIBUTING.md) to learn more about helping with this project.
 

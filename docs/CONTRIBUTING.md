@@ -18,6 +18,7 @@ If the answer to either of those two questions are "yes", then you're probably d
 ## How to create your changes
 - Once you’ve identified an area that needs help, make a new branch on your local copy of this repository. [Read more about branching in the git documentation](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging).
 - Make all of your changes in that branch.
+- Use `ember build` (development) or `ember build --environment production` (production) to see builds of your code.
 - Test your code and ensure that it aligns with the standards below.
 - Commit the relevant changes and push your branch to the remote repository.
 
@@ -57,9 +58,22 @@ We strongly believe in test-driven development and would like help implementing 
 - Comment your code so other contributors can understand what it does.
 - Make sure you use a [linter](https://en.wikipedia.org/wiki/Lint_(software)) to fix any and all JavaScript and CSS errors.
 
+### Running tests using Ember
+
+* `ember test`
+* `ember test --server`
+
 ## Submitting changes
 When you're ready to merge your changes into the master branch, open a [pull request](https://help.github.com/articles/creating-a-pull-request/) via [the project's pull request tab on GitHub](https://github.com/GoodForPoC/GoodForPoC/pulls). Make sure it has a clear list of what you've done and screenshots – we've created a handy template to make the submission process as easy as possible. Please make sure your submissions follow our coding conventions (above).
 
 Sometimes, reviewers will provide feedback on your project changes. Please include any feedback you receive from peers during the review process and update your pull request appropriately. Once approved, your pull request will be approved and deployed.
+
+## Further Reading / Useful Links
+
+* [ember.js](https://emberjs.com/)
+* [ember-cli](https://ember-cli.com/)
+* Development Browser Extensions
+  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
+  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
 
 ## Thank you!
