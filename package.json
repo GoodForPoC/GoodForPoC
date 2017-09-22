@@ -1,15 +1,15 @@
 {
   "name": "goodforpoc",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
-  "description": "Small description for goodforpoc goes here",
+  "description": "The frontend for the GoodForPoc platform.",
   "license": "MIT",
-  "author": "",
+  "author": "GoodForPoc Contributes <hello@goodforpocin.tech>",
   "directories": {
     "doc": "doc",
     "test": "tests"
   },
-  "repository": "",
+  "repository": "https://github.com/goodforpoc/goodforpoc",
   "scripts": {
     "build": "ember build",
     "start": "ember server",
@@ -35,10 +35,10 @@
     "ember-load-initializers": "^1.0.0",
     "ember-resolver": "^4.0.0",
     "ember-source": "~2.15.0",
-    "ember-welcome-page": "^3.0.0",
     "loader.js": "^4.2.3"
   },
   "engines": {
-    "node": "^4.5 || 6.* || >= 7.*"
+    "node": "^4.5 || 6.* || >= 7.*",
+    "npm": "5.*.*"
   }
 }
