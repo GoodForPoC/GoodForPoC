@@ -2,7 +2,7 @@
 
 Good for PoC is creating a list of inclusive companies for people of color in tech. It was founded by Amélie Lamont, Catt Small and Jacky Alciné. After running for a year by ourselves, we realized we needed help. This project is now open source. Please [view the roadmap](https://github.com/GoodForPoC/GoodForPoC/projects/1) to understand what kinds of contributions we are looking for.
 
-[![npm version](https://badge.fury.io/js/ember.svg)](https://badge.fury.io/js/ember) [![Gem Version](https://badge.fury.io/rb/sinatra.svg)](https://badge.fury.io/rb/sinatra)
+[![npm version](https://badge.fury.io/js/ember.svg)](https://badge.fury.io/js/ember)
 
 [Chat with project developers on Gitter](https://gitter.im/GoodForPoC/Lobby?utm_source=share-link&utm_medium=link&utm_campaign=share-link) – [view our code of conduct](https://github.com/GoodForPoC/GoodForPoC/blob/master/docs/CODE_OF_CONDUCT.md) – [support hosting fees for this project on Patreon](https://www.patreon.com/goodforpoc)
 
