@@ -4,7 +4,7 @@ Good for PoC is creating a list of inclusive companies for people of color in te
 
 [![npm version](https://badge.fury.io/js/ember.svg)](https://badge.fury.io/js/ember)
 
-[Chat with project developers on Gitter](https://gitter.im/GoodForPoC/Lobby?utm_source=share-link&utm_medium=link&utm_campaign=share-link) – [view our code of conduct](https://github.com/GoodForPoC/GoodForPoC/blob/master/docs/CODE_OF_CONDUCT.md) – [support hosting fees for this project on Patreon](https://www.patreon.com/goodforpoc)
+[Chat with project developers on Gitter](https://gitter.im/GoodForPoC/Contributors) – [view our code of conduct](https://github.com/GoodForPoC/GoodForPoC/blob/master/docs/CODE_OF_CONDUCT.md) – [support hosting fees for this project on Patreon](https://www.patreon.com/goodforpoc)
 
 ## Getting started
 You will need the following things properly installed on your computer.
