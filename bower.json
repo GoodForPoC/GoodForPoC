@@ -1,0 +1,6 @@
+{
+  "name": "goodforpoc",
+  "dependencies": {
+    "raven-js": "~3.3"
+  }
+}
