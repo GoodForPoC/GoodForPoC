@@ -22,5 +22,5 @@ export default function() {
     this.del('/posts/:id');
 
     http://www.ember-cli-mirage.com/docs/v0.3.x/shorthands/
-  */
+    */
 }
