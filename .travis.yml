@@ -15,3 +15,5 @@ cache:
 
 before_install:
   - npm config set spin false
+  - npm install --global bower
+  - bower install
