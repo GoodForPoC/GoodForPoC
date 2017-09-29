@@ -22,6 +22,9 @@
     "ember-cli-app-version": "^3.0.0",
     "ember-cli-babel": "^6.3.0",
     "ember-cli-dependency-checker": "^2.0.0",
+    "ember-cli-deploy-sentry": "0.5.2",
+    "ember-cli-document-title": "0.3.3",
+    "ember-cli-dotenv": "1.2.0",
     "ember-cli-eslint": "^4.0.0",
     "ember-cli-htmlbars": "^2.0.1",
     "ember-cli-htmlbars-inline-precompile": "^1.0.0",
@@ -29,8 +32,11 @@
     "ember-cli-mirage": "0.3.4",
     "ember-cli-qunit": "^4.0.0",
     "ember-cli-sass": "7.0.0",
+    "ember-cli-segment": "2.1.0",
+    "ember-cli-sentry": "2.4.4",
     "ember-cli-shims": "^1.1.0",
     "ember-cli-sri": "^2.1.0",
+    "ember-cli-template-lint": "0.7.3",
     "ember-cli-uglify": "^1.2.0",
     "ember-data": "~2.15.0",
     "ember-export-application-global": "^2.0.0",
@@ -43,5 +49,8 @@
   "engines": {
     "node": "^4.5 || 6.* || >= 7.*",
     "npm": "5.*.*"
+  },
+  "dependencies": {
+    "uglify-to-browserify": "2.0.0"
   }
 }
