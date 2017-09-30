@@ -1,5 +1,7 @@
 # Good for PoC
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/GoodForPoC/GoodForPoC.svg)](https://greenkeeper.io/)
+
 Good for PoC is creating a list of inclusive companies for people of color in tech. It was founded by Amélie Lamont, Catt Small and Jacky Alciné. After running for a year by ourselves, we realized we needed help. This project is now open source. Please [view the roadmap](https://github.com/GoodForPoC/GoodForPoC/projects/1) to understand what kinds of contributions we are looking for.
 
 [![npm version](https://badge.fury.io/js/ember.svg)](https://badge.fury.io/js/ember)
