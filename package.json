@@ -35,8 +35,13 @@
     "ember-cli-sentry": "3.0.0-beta.2",
     "ember-cli-shims": "^1.1.0",
     "ember-cli-sri": "^2.1.0",
+<<<<<<< HEAD
     "ember-cli-template-lint": "0.7.4",
     "ember-cli-uglify": "^2.0.0",
+=======
+    "ember-cli-template-lint": "0.7.3",
+    "ember-cli-uglify": "^1.2.0",
+>>>>>>> chore(package): update ember-data to version 2.16.0
     "ember-data": "~2.16.0",
     "ember-export-application-global": "^2.0.0",
     "ember-feature-flags": "3.0.0",
