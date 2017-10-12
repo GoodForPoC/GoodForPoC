@@ -22,8 +22,10 @@ Once you've installed the above...
 2. Clone `git@github.com:GoodForPoc/GoodForPoC.git` to a folder on your computer.
 3. `cd` into the GoodForPoc folder using your command line editor.
 4. Run `npm install`.
-5. Run `ember serve`.
-6. Visit the app at [http://localhost:4200](http://localhost:4200).
+5. Run `npm install -g ember-cli`.
+6. Run `npm install -g bower`.
+7. Run `ember serve`.
+8. Visit the app at [http://localhost:4200](http://localhost:4200).
 
 Read the [contribution guidelines](https://github.com/GoodForPoC/GoodForPoC/blob/master/docs/CONTRIBUTING.md) to learn more about helping with this project.
 
