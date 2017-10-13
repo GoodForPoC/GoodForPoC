@@ -24,6 +24,7 @@ $ git clone git@github.com:GoodForPoc/GoodForPoC.git
 $ cd GoodForPoc
 $ npm install --global ember-cli # If you don't have Ember installed already.
 $ npm install --global bower     # If you don't have Bower installed already.
+$ npm install                    # Fetch dependencies.
 $ npm start
 ```
 
