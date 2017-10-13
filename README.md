@@ -13,17 +13,21 @@ You will need the following things properly installed on your computer.
 
 - [Git](https://git-scm.com/)
 - [Node.js](https://nodejs.org/) (with NPM)
+- [Bower](https://bower.io)
 - [Ember CLI](https://ember-cli.com/)
 - [Google Chrome](https://google.com/chrome/)
 
-Once you've installed the above...
+Once you've installed the above, open your terminal emulator and run the following:
 
-1. Open the command line editor or git graphical user interface (GUI) of your choosing.
-2. Clone `git@github.com:GoodForPoc/GoodForPoC.git` to a folder on your computer.
-3. `cd` into the GoodForPoc folder using your command line editor.
-4. Run `npm install`.
-5. Run `ember serve`.
-6. Visit the app at [http://localhost:4200](http://localhost:4200).
+```sh
+$ git clone git@github.com:GoodForPoc/GoodForPoC.git
+$ cd GoodForPoc
+$ npm install --global ember-cli # If you don't have Ember installed already.
+$ npm install --global bower     # If you don't have Bower installed already.
+$ npm start
+```
+
+Visit the app at <http://localhost:4200>.
 
 Read the [contribution guidelines](https://github.com/GoodForPoC/GoodForPoC/blob/master/docs/CONTRIBUTING.md) to learn more about helping with this project.
 
