@@ -17,7 +17,11 @@ module.exports = function(environment) {
         Date: false
       }
     },
-
+    sentry: {
+      // NOTE: This is the public DSN for GoodForPoc. This will be removed
+      // by November 2017 with one that's pulled in from the environment.
+      dsn: 'https://4aa9427eddf041e3abd79c43bfbf9c36@sentry.io/221258'
+    },
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
