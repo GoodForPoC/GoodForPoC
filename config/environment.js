@@ -8,20 +8,22 @@ module.exports = function(environment) {
     rootURL: '/',
     locationType: 'auto',
     EmberENV: {
-      FEATURES: {
-        // Here you can enable experimental features on an ember canary build
-        // e.g. 'with-controller': true
-      },
+      FEATURES: {},
       EXTEND_PROTOTYPES: {
-        // Prevent Ember Data from overriding Date.parse.
         Date: false
       }
     },
-
-    APP: {
-      // Here you can pass flags/options to your application instance
-      // when it is created
+    sentry: {
+      dsn: 'https://4aa9427eddf041e3abd79c43bfbf9c36@sentry.io/221258',
+      // debug: environment === 'development',
+      // development: environment === 'development',
     },
+    contentSecurityPolicy: {
+      'script-src': "'self' 'unsafe-inline' 'unsafe-eval' cdn.ravenjs.com",
+      'img-src': "data: app.getsentry.com",
+      'connect-src': "'self' localhost",
+    },
+    APP: {},
     segment: {
       WRITE_KEY: process.env.SEGMENT_WRITE_KEY,
       LOG_EVENT_TRACKING: ''
@@ -29,11 +31,11 @@ module.exports = function(environment) {
   };
 
   if (environment === 'development') {
-    // ENV.APP.LOG_RESOLVER = true;
-    // ENV.APP.LOG_ACTIVE_GENERATION = true;
-    // ENV.APP.LOG_TRANSITIONS = true;
-    // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
-    // ENV.APP.LOG_VIEW_LOOKUPS = true;
+    ENV.APP.LOG_RESOLVER = true;
+    ENV.APP.LOG_ACTIVE_GENERATION = true;
+    ENV.APP.LOG_TRANSITIONS = true;
+    ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
+    ENV.APP.LOG_VIEW_LOOKUPS = true;
   }
 
   if (environment === 'test') {
@@ -45,10 +47,6 @@ module.exports = function(environment) {
     ENV.APP.LOG_VIEW_LOOKUPS = false;
 
     ENV.APP.rootElement = '#ember-testing';
-  }
-
-  if (environment === 'production') {
-
   }
 
   return ENV;
