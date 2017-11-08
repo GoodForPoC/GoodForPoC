@@ -7,7 +7,8 @@ module.exports = function(defaults) {
   let app = new EmberApp(defaults, {
     dotEnv: {
       clientAllowedKeys: [
-        'SEGMENT_WRITE_KEY'
+        'SEGMENT_WRITE_KEY',
+        'G4POC_API_ENDPOINT',
       ]
     }
     // Add options here

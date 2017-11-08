@@ -27,3 +27,4 @@ testem.log
 bower.json.ember-try
 package.json.ember-try
 .envrc
+.env

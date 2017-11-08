@@ -23,7 +23,9 @@ module.exports = function(environment) {
       'img-src': "data: app.getsentry.com",
       'connect-src': "'self' localhost",
     },
-    APP: {},
+    APP: {
+      apiEndpoint: process.env.G4POC_API_ENDPOINT,
+    },
     segment: {
       WRITE_KEY: process.env.SEGMENT_WRITE_KEY,
       LOG_EVENT_TRACKING: ''
