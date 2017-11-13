@@ -24,7 +24,7 @@
     "ember-cli-dependency-checker": "^2.0.0",
     "ember-cli-deploy-sentry": "0.5.2",
     "ember-cli-document-title": "0.3.3",
-    "ember-cli-dotenv": "1.2.0",
+    "ember-cli-dotenv": "2.0.0",
     "ember-cli-eslint": "^4.0.0",
     "ember-cli-htmlbars": "^2.0.1",
     "ember-cli-htmlbars-inline-precompile": "^1.0.0",
