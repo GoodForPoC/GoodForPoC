@@ -34,3 +34,20 @@ $sp9: 2.25rem; // 36px
 $sp10: 2.5rem; // 40px
 $sp11: 2.75rem; // 44px
 $sp12: 3rem; // 48px
+
+/* Screen sizes */
+
+// Small smartphones
+$screen-xs: 480px;
+
+// Large smartphones
+$screen-sm: 640px;
+
+// Tablets
+$screen-md: 768px;
+
+// Small desktops
+$screen-lg: 960px;
+
+// Large desktops
+$screen-xl: 1280px;
