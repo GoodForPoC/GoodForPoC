@@ -1,0 +1,18 @@
+/* Alerts */
+
+.alert {
+  padding: $sp4 $sp4 $sp3;
+  text-align: center;
+
+  &.alert-success {
+    background-color: $green;
+  }
+
+  &.alert-warning {
+    background-color: $yellow;
+  }
+
+  &.alert-error {
+    background-color: $orange;
+  }
+}

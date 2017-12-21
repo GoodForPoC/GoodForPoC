@@ -1,0 +1,23 @@
+/* LAYOUT */
+.page-body {
+  padding: 2rem;
+}
+
+/* SPACING */
+
+/* COLUMN GRID */
+.column-container {
+  display: grid;
+}
+
+.column-container-4 {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.column-container-3 {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.column-container-2 {
+  grid-template-columns: 1fr 1fr;
+}

@@ -1,0 +1,115 @@
+/* FORMS */
+
+button, .button, input, select, textarea {
+  border-radius: $sp1;
+  height: $sp12;
+  padding: $sp2 $sp4;
+  font-size: $base-font-size;
+  display: inline-block;
+  background-color: $white;
+}
+
+button, input[type="submit"], .button {
+  line-height: $sp8;
+  -webkit-appearance: none;
+  border: 0;
+  font-family: $sans-serif-font;
+  font-weight: bold;
+  text-decoration: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &.button-primary {
+    color: $white;
+    background-color: $purple;
+
+    &:visited {
+      background-color: $purple;
+    }
+
+    &:hover {
+      background-color: lighten($purple, 10%);
+    }
+
+    &:active {
+      background-color: $dark-purple;
+    }
+  }
+
+  &.button-secondary {
+    color: $purple;
+    background-color: $white;
+    border-color: $purple;
+
+    &:visited {
+      color: $purple;
+      border-color: $purple;
+    }
+
+    &:hover {
+      color: lighten($purple, 10%);
+      border-color: lighten($purple, 10%);
+    }
+
+    &:active {
+      color: $dark-purple;
+      border-color: $dark-purple;
+      background-color: $lighter-gray;
+    }
+  }
+
+  &[disabled] {
+    color: $dark-gray;
+    background-color: $light-gray;
+  }
+}
+
+select, input:not([type="button"]), textarea {
+  border: 1px solid $light-gray;
+  font-family: $serif-font;
+  color: $dark-gray;
+}
+
+input:not([type="button"]):not([type="checkbox"]):not([type="radio"]), textarea {
+  -webkit-appearance: none;
+  padding-top: $sp2;
+
+  &:focus {
+    outline: none;
+    border-color: $gray;
+  }
+}
+
+input {
+
+  &[type="radio"], &[type="checkbox"] {
+    vertical-align: middle;
+  }
+
+  &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: $gray;
+  }
+
+  &::-moz-placeholder { /* Firefox 19+ */
+    color: $gray;
+  }
+
+  &:-ms-input-placeholder { /* IE 10+ */
+    color: $gray;
+  }
+
+  &:-moz-placeholder { /* Firefox 18- */
+    color: $gray;
+  }
+}
+
+label {
+  font-weight: 600;
+  display: block;
+
+  input:not([type="button"]):not([type="checkbox"]):not([type="radio"]) {
+    margin-top: $sp1;
+  }
+}

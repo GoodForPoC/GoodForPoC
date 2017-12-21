@@ -1,0 +1,17 @@
+/* BODY + BASE CSS */
+
+* {
+  box-sizing: border-box;
+
+  &:focus {
+    outline: 1px dotted $gray;
+  }
+}
+
+body {
+  font-family: $serif-font;
+  color: $dark-gray;
+  line-height: $sp5;
+  margin: 0;
+  padding: 0;
+}
