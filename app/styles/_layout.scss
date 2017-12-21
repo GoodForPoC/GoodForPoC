@@ -1,9 +1,26 @@
 /* LAYOUT */
 .page-body {
   padding: 2rem;
+  max-width: $screen-xl;
+  margin: 0 auto;
 }
 
 /* SPACING */
+.mb-1 {
+  margin-bottom: $sp1;
+}
+
+.mb-2 {
+  margin-bottom: $sp2;
+}
+
+.mb-3 {
+  margin-bottom: $sp3;
+}
+
+.mb-4 {
+  margin-bottom: $sp4;
+}
 
 /* 12 COLUMN GRID */
 .col-container {
@@ -12,27 +29,7 @@
   grid-gap: $sp5;
 }
 
-.col-span-1 {
-  @include media-xl {
-    grid-column: span 1;
-  }
-
-  @include media-lg {
-    grid-column: span 2;
-  }
-
-  @include media-md {
-    grid-column: span 4;
-  }
-
-  @include media-sm {
-    grid-column: span 4;
-  }
-
-  @include media-xs {
-    grid-column: span 12;
-  }
-}
+// assuming we don't need 1
 
 .col-span-2 {
   @include media-xl {
@@ -44,11 +41,11 @@
   }
 
   @include media-md {
-    grid-column: span 4;
+    grid-column: span 2;
   }
 
   @include media-sm {
-    grid-column: span 4;
+    grid-column: span 2;
   }
 
   @include media-xs {
@@ -70,7 +67,7 @@
   }
 
   @include media-sm {
-    grid-column: span 4;
+    grid-column: span 3;
   }
 
   @include media-xs {
@@ -202,7 +199,7 @@
   }
 
   @include media-sm {
-    grid-column: span 12;
+    grid-column: span 9;
   }
 
   @include media-xs {
@@ -220,11 +217,11 @@
   }
 
   @include media-md {
-    grid-column: span 12;
+    grid-column: span 10;
   }
 
   @include media-sm {
-    grid-column: span 12;
+    grid-column: span 10;
   }
 
   @include media-xs {
@@ -232,27 +229,7 @@
   }
 }
 
-.col-span-11 {
-  @include media-xl {
-    grid-column: span 11;
-  }
-
-  @include media-lg {
-    grid-column: span 11;
-  }
-
-  @include media-md {
-    grid-column: span 12;
-  }
-
-  @include media-sm {
-    grid-column: span 12;
-  }
-
-  @include media-xs {
-    grid-column: span 12;
-  }
-}
+// assuming we don't need 11
 
 .col-span-12 {
   grid-column: span 12;
