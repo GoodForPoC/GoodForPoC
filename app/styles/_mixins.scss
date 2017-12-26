@@ -1,0 +1,36 @@
+/* MIXINS */
+
+// Extra-small devices
+@mixin media-xs {
+   @media (max-width: #{$screen-sm}) {
+       @content;
+   }
+}
+
+// Small devices
+@mixin media-sm {
+   @media (min-width: #{$screen-sm}) and (max-width: #{$screen-md} - 1) {
+       @content;
+   }
+}
+
+// Medium devices
+@mixin media-md {
+   @media (min-width: #{$screen-md}) and (max-width: #{$screen-lg} - 1) {
+       @content;
+   }
+}
+
+// Large devices
+@mixin media-lg {
+   @media (min-width: #{$screen-lg}) and (max-width: #{$screen-xl} - 1) {
+       @content;
+   }
+}
+
+// Extra large devices
+@mixin media-xl {
+   @media (min-width: #{$screen-xl}) {
+       @content;
+   }
+}

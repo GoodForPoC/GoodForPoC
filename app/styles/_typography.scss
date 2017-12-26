@@ -1,0 +1,70 @@
+/* TYPOGRAPHY */
+
+h1, h3, h6 {
+  font-family: $sans-serif-font;
+}
+
+h1, h4 {
+  color: $black;
+}
+
+h3, h6 {
+  color: $gray;
+}
+
+h2, h4, h5 {
+  font-weight: 600;
+}
+
+h1 {
+  font-size: $sp9;
+  line-height: $sp10;
+}
+
+h2 {
+  font-size: $sp8;
+  line-height: $sp9;
+}
+
+h3 {
+  font-size: $sp7;
+  line-height: $sp8;
+}
+
+h4 {
+  font-size: $sp6;
+  line-height: $sp7;
+}
+
+h5 {
+  font-size: $sp5;
+  line-height: $sp6;
+}
+
+h6 {
+  font-size: $sp4;
+  line-height: $sp5;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+a {
+  color: $purple;
+  text-decoration: underline;
+
+  &:visited {
+    color: $dark-purple;
+  }
+
+  &:hover {
+    color: lighten($purple, 10%);
+  }
+}
+
+.error {
+  color: $orange;
+}
+
+.subtext {
+  color: $gray;
+}
