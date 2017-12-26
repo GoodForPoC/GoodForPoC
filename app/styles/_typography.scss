@@ -61,10 +61,22 @@ a {
   }
 }
 
+ul {
+  li {
+    margin-bottom: $sp1;
+  }
+}
+
 .error {
   color: $orange;
 }
 
 .subtext {
   color: $gray;
+}
+
+.list-unstyled {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
