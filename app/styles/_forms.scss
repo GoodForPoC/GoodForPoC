@@ -105,11 +105,61 @@ input {
   }
 }
 
-label {
+label, .label {
   font-weight: 600;
   display: block;
+}
 
+label {
   input:not([type="button"]):not([type="checkbox"]):not([type="radio"]) {
     margin-top: $sp1;
+  }
+
+  &.checkbox, &.radio {
+    font-weight: 400;
+    margin-bottom: $sp2;
+    cursor: pointer;
+
+    input {
+      display: none;
+    }
+
+    span {
+      &::before {
+        content: '';
+        border: 1px solid $light-gray;
+        display: inline-block;
+        margin-right: $sp2;
+        vertical-align: middle;
+        box-sizing: border-box;
+        text-align: center;
+        width: $sp5;
+        height: $sp5;
+        color: $gray;
+      }
+    }
+  }
+
+  &.checkbox {
+    span::before {
+      border-radius: $sp1;
+      font-size: $sp4;
+      padding-top: $sp1/2;
+    }
+
+    input:checked + span::before {
+      content: '╳';
+    }
+  }
+
+  &.radio {
+    span::before {
+      border-radius: 100%;
+      font-size: $sp3;
+    }
+
+    input:checked + span::before {
+      content: '⬤';
+    }
   }
 }
