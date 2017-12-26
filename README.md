@@ -28,7 +28,7 @@ $ npm install                    # Fetch dependencies.
 $ npm start
 ```
 
-Visit the app at <http://localhost:4200>.
+You will then be able to visit the app at <http://localhost:4200>. *To run a local version of the API, clone the [GoodForPoC-API repository](https://github.com/GoodForPoC/GoodForPoC-API).*
 
 Read the [contribution guidelines](https://github.com/GoodForPoC/GoodForPoC/blob/master/docs/CONTRIBUTING.md) to learn more about helping with this project.
 
