@@ -1,5 +1,71 @@
 /* TYPOGRAPHY */
 
+/* ICONS */
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(/assets/fonts/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+  local('MaterialIcons-Regular'),
+  url(/assets/fonts/MaterialIcons-Regular.woff2) format('woff2'),
+  url(/assets/fonts/MaterialIcons-Regular.woff) format('woff'),
+  url(/assets/fonts/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+.icon {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: $sp6;  /* Preferred icon size */
+  display: inline-block;
+  line-height: $sp6;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+/* Rules for sizing the icon. */
+.icon.icon-sm {
+  font-size: $sp4;
+}
+
+.icon.icon-lg {
+  font-size: $sp9;
+}
+
+.icon.icon-xl {
+  font-size: $sp12;
+}
+
+/* Rules for using icons as black on a light background. */
+.icon.icon-disabled {
+  color: $gray;
+}
+
+/* Rules for using icons as white on a dark background. */
+.icon.icon-light {
+  color: $white;
+}
+.icon.icon-light.icon-disabled {
+  color: $light-gray;
+}
+
+/* HEADERS */
+
 h1, h3, h6 {
   font-family: $sans-serif-font;
 }
@@ -48,6 +114,8 @@ h6 {
   text-transform: uppercase;
 }
 
+/* LINKS */
+
 a {
   color: $purple;
   text-decoration: underline;
@@ -67,6 +135,8 @@ ul {
   }
 }
 
+/* OTHER */
+
 .error {
   color: $orange;
 }
@@ -80,6 +150,8 @@ ul {
   padding: 0;
   list-style: none;
 }
+
+/* ALIGNMENT */
 
 .text-align-left {
   text-align: left;
