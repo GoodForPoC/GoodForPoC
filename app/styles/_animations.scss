@@ -1,0 +1,46 @@
+/* vars */
+
+$globalDuration: 300ms;
+$globalDelay: 500ms;
+
+/* Animations Block */ 
+
+@keyframes no-transform {
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+  50% {
+    opacity: .8;
+    -webkit-transform: scale(.8);
+            transform: scale(.8);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@-webkit-keyframes rotate-up {
+  100% {
+    -webkit-transform: rotateZ(-4deg);
+            transform: rotateZ(-4deg);
+  }
+}
+
+@keyframes rotate-up {
+  100% {
+    -webkit-transform: rotateZ(-4deg);
+            transform: rotateZ(-4deg);
+  }
+}
