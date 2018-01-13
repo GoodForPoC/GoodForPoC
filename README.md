@@ -25,6 +25,18 @@ $ cd GoodForPoc
 $ npm install --global ember-cli # If you don't have Ember installed already.
 $ npm install --global bower     # If you don't have Bower installed already.
 $ npm install                    # Fetch dependencies.
+$ bower install                  # Grab more dependencies.
+$ touch .env
+```
+
+Open that `.env` file and put the following in there:
+```sh
+G4POC_API_ENDPOINT=http://localhost:9292/
+```
+
+Then run:
+
+```sh
 $ npm start
 ```
 
