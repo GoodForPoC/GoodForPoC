@@ -53,6 +53,6 @@
     "npm": "5.*.*"
   },
   "dependencies": {
-    "uglify-to-browserify": "2.0.0"
+    "uglify-to-browserify": "2.1.0"
   }
 }
