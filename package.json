@@ -32,7 +32,7 @@
     "ember-cli-qunit": "^4.0.0",
     "ember-cli-sass": "7.1.3",
     "ember-cli-segment": "2.1.0",
-    "ember-cli-sentry": "3.0.0-beta.2",
+    "ember-cli-sentry": "3.0.0",
     "ember-cli-shims": "^1.1.0",
     "ember-cli-sri": "^2.1.0",
     "ember-cli-template-lint": "0.7.4",
