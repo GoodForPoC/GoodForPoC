@@ -3,28 +3,6 @@ layout: default
 header_type: full
 ---
 <div class="home-header">
-  <h1 class="home-header_intro">{{ site.long_description }}</h1>
-  <a class="home-header_learn button-cta" href="/about">Learn more</a>
-</div>
-<div class="page-body home">
-  <div class="companies">
-    {% assign companies = site.companies %}
-      {% for company in companies %}
-        <div class="company-single">
-          <a href="{{company.url}}">
-            <img class="company-logo" src="{{ company.image }}" alt="{{ company.title }}">
-            <h3 class="company-info_title">{{ company.title }}</h3>
-            <p class="company-info_description">{{ company.description | truncatewords: 15 }}</p>
-            <section class="company-info_footer">
-              <ul class="company-info_category">
-                {% for category in company.categories %}
-                  <li>{{category}}{% unless forloop.last %}, {% endunless %}</li>
-                {% endfor %}
-              </ul>
-              <span class="company-info_read-more">Read more</span>
-            </section>
-          </a>
-        </div>
-      {% endfor %}
-  </div>
+  <h1 class="home-header_intro">After thoughtful consideration, Good for PoC is transforming. We realized that all capitalist entities are inherently bad for people of color. Instead, we have decided to close the site and use the remaining funds to sponsor educational opportunities for people of color in design and technology. There's no catch – you just need to apply.</h1>
+  <a class="home-header_learn button-cta" href="https://goo.gl/forms/jgjZR8W2tx4Gd9LC2">Apply for a scholarship</a>
 </div>
